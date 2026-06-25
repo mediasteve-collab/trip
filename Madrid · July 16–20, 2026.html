@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)file:///Users/strichardson/Downloads/Madrid_Jul16-20_2026_1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madrid · July 16–20, 2026</title>
+<link rel="stylesheet" href="./Madrid · July 16–20, 2026_files/leaflet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Madrid · July 16–20, 2026_files/css2" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0F1B35;
+    --navy-mid: #1A2D52;
+    --gold: #C8973A;
+    --gold-light: #E8BF6A;
+    --cream: #F9F5EF;
+    --warm-white: #FFFDF9;
+    --text: #1A1A2E;
+    --muted: #6B7280;
+    --border: rgba(200,151,58,0.2);
+    --red: #C60B1E;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--navy);
+    color: #fff;
+    padding: 80px 24px 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(200,151,58,0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-flag { font-size: 32px; margin-bottom: 20px; }
+  .hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(42px, 8vw, 88px);
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.05;
+    color: #fff;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+    font-weight: 400;
+  }
+  .hero-sub {
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+    font-weight: 500;
+  }
+  .hero-meta {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .hero-meta-item { text-align: center; }
+  .hero-meta-item .val {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--gold-light);
+  }
+  .hero-meta-item .lbl {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    margin-top: 2px;
+  }
+  .hero-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255,255,255,0.15);
+    align-self: center;
+  }
+
+  /* ── NAV ── */
+  .day-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--navy);
+    border-bottom: 1px solid rgba(200,151,58,0.3);
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .day-nav::-webkit-scrollbar { display: none; }
+  .day-nav a {
+    flex: 1;
+    min-width: 100px;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 8px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .day-nav a:hover, .day-nav a.active {
+    color: var(--gold-light);
+    border-bottom-color: var(--gold);
+  }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+  /* ── MAP SECTION ── */
+  .map-section {
+    background: var(--navy-mid);
+    padding: 48px 0;
+  }
+  .map-section .container { max-width: 960px; }
+  .map-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .map-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+  .map-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 24px;
+    align-items: start;
+  }
+  @media (max-width: 680px) {
+    .map-grid { grid-template-columns: 1fr; }
+  }
+  .map-frame {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(200,151,58,0.25);
+    height: 420px;
+    background: #1a2d52;
+  }
+  .map-frame iframe { width: 100%; height: 100%; border: none; display: block; }
+  .map-legend { display: flex; flex-direction: column; gap: 8px; }
+  .map-legend-section { margin-bottom: 8px; }
+  .map-legend-title {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(200,151,58,0.2);
+  }
+  .map-pin {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 6px 0;
+  }
+  .pin-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+  .pin-text { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.4; }
+  .pin-text strong { color: #fff; font-weight: 500; display: block; }
+
+  /* ── DAY SECTIONS ── */
+  .day-section {
+    padding: 56px 0 16px;
+    border-top: 1px solid var(--border);
+  }
+  .day-section:first-child { border-top: none; }
+  .day-eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .day-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+  .day-theme {
+    font-size: 14px;
+    color: var(--muted);
+    font-style: italic;
+    margin-bottom: 32px;
+  }
+
+  /* ── TIMELINE ── */
+  .timeline { position: relative; padding-left: 28px; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 6px;
+    bottom: 6px;
+    width: 1px;
+    background: var(--border);
+  }
+  .tl-item { position: relative; margin-bottom: 24px; }
+  .tl-dot {
+    position: absolute;
+    left: -24px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--cream);
+    flex-shrink: 0;
+  }
+  .tl-card {
+    background: var(--warm-white);
+    border: 1px solid rgba(0,0,0,0.07);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .tl-card.hotel-card {
+    background: #FFF9F0;
+    border-color: rgba(200,151,58,0.35);
+  }
+  .tl-card.wc-card {
+    background: #F0FFF4;
+    border-color: rgba(34,139,34,0.3);
+  }
+  .tl-header {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+  }
+  .tl-time {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 1px;
+    flex-shrink: 0;
+  }
+  .tl-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.3;
+  }
+  .tl-note {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.55;
+    margin-top: 4px;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+  .t-food    { background: #E8F5E9; color: #1B5E20; }
+  .t-culture { background: #E3F2FD; color: #0D47A1; }
+  .t-drinks  { background: #FFF8E1; color: #E65100; }
+  .t-walk    { background: #F3E5F5; color: #4A148C; }
+  .t-night   { background: #EDE7F6; color: #311B92; }
+  .t-relax   { background: #E8F5E9; color: #1B5E20; }
+  .t-hotel   { background: #FFF3E0; color: #BF360C; }
+  .t-wc      { background: #E8F5E9; color: #1B6B3A; }
+  .t-market  { background: #FFF9C4; color: #F57F17; }
+
+  /* hotel split */
+  .hotel-split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
+  @media (max-width: 500px) { .hotel-split { grid-template-columns: 1fr; } }
+  .hotel-group {
+    background: rgba(255,255,255,0.7);
+    border-radius: 8px;
+    padding: 10px 12px;
+    border: 1px solid rgba(200,151,58,0.2);
+  }
+  .hotel-group-name {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 4px;
+    letter-spacing: 0.3px;
+  }
+  .hotel-group-hotel {
+    font-size: 11px;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .hotel-group-route {
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* ── RESERVATIONS BOX ── */
+  .res-section {
+    background: var(--navy);
+    padding: 48px 0;
+    margin-top: 48px;
+  }
+  .res-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  .res-sub { font-size: 14px; color: rgba(255,255,255,0.5); margin-bottom: 32px; }
+  .res-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+  }
+  .res-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(200,151,58,0.2);
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .res-card-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .res-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: 13px;
+  }
+  .res-item:last-child { border-bottom: none; }
+  .res-item-name { color: #fff; font-weight: 500; }
+  .res-item-when { color: rgba(255,255,255,0.4); font-size: 12px; flex-shrink: 0; }
+
+  /* ── FOOTER ── */
+  .map-popup .leaflet-popup-content { font-family: 'Inter', sans-serif; font-size: 13px; line-height: 1.5; }
+  .map-popup .leaflet-popup-content b { color: #0F1B35; }
+  #leaflet-map { border-radius: 12px; }
+
+  footer {
+    background: var(--navy);
+    border-top: 1px solid rgba(200,151,58,0.15);
+    padding: 28px 24px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+  }
+  footer span { color: var(--gold); }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-flag">🇪🇸</div>
+  <h1>Ma<em>drid</em></h1>
+  <p class="hero-sub">July 16 – 20 · 2026</p>
+  <div class="hero-meta">
+    <div class="hero-meta-item">
+      <span class="val">5</span>
+      <span class="lbl">Days</span>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-meta-item">
+      <span class="val">4</span>
+      <span class="lbl">People</span>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-meta-item">
+      <span class="val">⚽</span>
+      <span class="lbl">World Cup Final</span>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-meta-item">
+      <span class="val">40+</span>
+      <span class="lbl">Places</span>
+    </div>
+  </div>
+</section>
+
+<!-- STICKY NAV -->
+<nav class="day-nav" id="day-nav">
+  <a href="file:///Users/strichardson/Downloads/Madrid_Jul16-20_2026_1.html#map" class="active">Map</a>
+  <a href="file:///Users/strichardson/Downloads/Madrid_Jul16-20_2026_1.html#thu">Thu 16</a>
+  <a href="file:///Users/strichardson/Downloads/Madrid_Jul16-20_2026_1.html#fri">Fri 17</a>
+  <a href="file:///Users/strichardson/Downloads/Madrid_Jul16-20_2026_1.html#sat">Sat 18</a>
+  <a href="file:///Users/strichardson/Downloads/Madrid_Jul16-20_2026_1.html#sun">Sun 19</a>
+  <a href="file:///Users/strichardson/Downloads/Madrid_Jul16-20_2026_1.html#mon">Mon 20</a>
+  <a href="file:///Users/strichardson/Downloads/Madrid_Jul16-20_2026_1.html#reservations">Bookings</a>
+</nav>
+
+<!-- MAP -->
+<section class="map-section" id="map">
+  <div class="container">
+    <p class="map-label">The city</p>
+    <h2 class="map-title">Key spots across Madrid</h2>
+    <div class="map-grid">
+      <div class="map-frame leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" id="leaflet-map" style="height: 420px; position: relative;" tabindex="0"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 19; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" src="./Madrid · July 16–20, 2026_files/6177.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(186px, -9px, 0px); opacity: 1;"><img alt="" src="./Madrid · July 16–20, 2026_files/6178.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(186px, 247px, 0px); opacity: 1;"><img alt="" src="./Madrid · July 16–20, 2026_files/6177(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-70px, -9px, 0px); opacity: 1;"><img alt="" src="./Madrid · July 16–20, 2026_files/6177(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(442px, -9px, 0px); opacity: 1;"><img alt="" src="./Madrid · July 16–20, 2026_files/6178(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-70px, 247px, 0px); opacity: 1;"><img alt="" src="./Madrid · July 16–20, 2026_files/6178(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(442px, 247px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-marker-pane"><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(208px, 143px, 0px); z-index: 143;"><div style="width:14px;height:14px;border-radius:50%;background:#2a78d6;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(341px, 196px, 0px); z-index: 196;"><div style="width:14px;height:14px;border-radius:50%;background:#D85A30;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(434px, 242px, 0px); z-index: 242;"><div style="width:14px;height:14px;border-radius:50%;background:#4a3aa7;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(405px, 333px, 0px); z-index: 333;"><div style="width:14px;height:14px;border-radius:50%;background:#4a3aa7;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(534px, 219px, 0px); z-index: 219;"><div style="width:14px;height:14px;border-radius:50%;background:#1baf7a;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(179px, 143px, 0px); z-index: 143;"><div style="width:14px;height:14px;border-radius:50%;background:#1baf7a;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(140px, 173px, 0px); z-index: 173;"><div style="width:14px;height:14px;border-radius:50%;background:#1baf7a;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(256px, 216px, 0px); z-index: 216;"><div style="width:14px;height:14px;border-radius:50%;background:#1baf7a;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(176px, 151px, 0px); z-index: 151;"><div style="width:14px;height:14px;border-radius:50%;background:#1baf7a;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(474px, 149px, 0px); z-index: 149;"><div style="width:14px;height:14px;border-radius:50%;background:#1baf7a;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(482px, 125px, 0px); z-index: 125;"><div style="width:14px;height:14px;border-radius:50%;background:#eda100;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(249px, 238px, 0px); z-index: 238;"><div style="width:14px;height:14px;border-radius:50%;background:#eda100;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(400px, 91px, 0px); z-index: 91;"><div style="width:14px;height:14px;border-radius:50%;background:#eda100;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(348px, 226px, 0px); z-index: 226;"><div style="width:14px;height:14px;border-radius:50%;background:#eda100;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(455px, 121px, 0px); z-index: 121;"><div style="width:14px;height:14px;border-radius:50%;background:#eda100;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(457px, 121px, 0px); z-index: 121;"><div style="width:14px;height:14px;border-radius:50%;background:#eda100;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(249px, 238px, 0px); z-index: 238;"><div style="width:14px;height:14px;border-radius:50%;background:#eda100;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(348px, -133px, 0px); z-index: -133;"><div style="width:14px;height:14px;border-radius:50%;background:#eda100;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(400px, 65px, 0px); z-index: 65;"><div style="width:14px;height:14px;border-radius:50%;background:#eda100;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(309px, 166px, 0px); z-index: 166;"><div style="width:14px;height:14px;border-radius:50%;background:#eda100;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(363px, 137px, 0px); z-index: 137;"><div style="width:14px;height:14px;border-radius:50%;background:#eda100;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(286px, 66px, 0px); z-index: 66;"><div style="width:14px;height:14px;border-radius:50%;background:#eda100;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(641px, -284px, 0px); z-index: -284;"><div style="width:14px;height:14px;border-radius:50%;background:#eda100;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(334px, -70px, 0px); z-index: -70;"><div style="width:14px;height:14px;border-radius:50%;background:#eda100;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(278px, 140px, 0px); z-index: 140;"><div style="width:14px;height:14px;border-radius:50%;background:#eda100;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(330px, 235px, 0px); z-index: 235;"><div style="width:14px;height:14px;border-radius:50%;background:#eda100;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(257px, 346px, 0px); z-index: 346;"><div style="width:14px;height:14px;border-radius:50%;background:#C60B1E;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(288px, 325px, 0px); z-index: 325;"><div style="width:14px;height:14px;border-radius:50%;background:#534AB7;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(359px, 342px, 0px); z-index: 342;"><div style="width:14px;height:14px;border-radius:50%;background:#534AB7;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -7px; margin-top: -7px; width: 14px; height: 14px; transform: translate3d(465px, 151px, 0px); z-index: 151;"><div style="width:14px;height:14px;border-radius:50%;background:#1B6B3A;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div></div></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(2.05401e+06px, 1.58153e+06px, 0px) scale(8192);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="file:///Users/strichardson/Downloads/Madrid_Jul16-20_2026_1.html#" title="Zoom in" role="button" aria-label="Zoom in" aria-disabled="false"><span aria-hidden="true">+</span></a><a class="leaflet-control-zoom-out" href="file:///Users/strichardson/Downloads/Madrid_Jul16-20_2026_1.html#" title="Zoom out" role="button" aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com/" title="A JavaScript library for interactive maps"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" class="leaflet-attribution-flag"><path fill="#4C7BE1" d="M0 0h12v4H0z"></path><path fill="#FFD500" d="M0 4h12v3H0z"></path><path fill="#E0BC00" d="M0 7h12v1H0z"></path></svg> Leaflet</a> <span aria-hidden="true">|</span> © OpenStreetMap contributors © CARTO</div></div></div></div>
+      <div class="map-legend">
+        <div class="map-legend-section">
+          <div class="map-legend-title">Hotels</div>
+          <div class="map-pin">
+            <div class="pin-dot" style="background:#2a78d6"></div>
+            <div class="pin-text"><strong>Catalonia Plaza España</strong> Stuart &amp; Josianne · Gran Vía 70</div>
+          </div>
+          <div class="map-pin">
+            <div class="pin-dot" style="background:#D85A30"></div>
+            <div class="pin-text"><strong>JW Marriott</strong> Steve &amp; Parin · Calle Sevilla 2</div>
+          </div>
+        </div>
+        <div class="map-legend-section">
+          <div class="map-legend-title">Museums</div>
+          <div class="map-pin">
+            <div class="pin-dot" style="background:#4a3aa7"></div>
+            <div class="pin-text"><strong>Museo del Prado</strong> Pre-book · Free 6–8pm Mon–Sat</div>
+          </div>
+          <div class="map-pin">
+            <div class="pin-dot" style="background:#4a3aa7"></div>
+            <div class="pin-text"><strong>Museo Reina Sofía</strong> Guernica · Free 7–9pm</div>
+          </div>
+        </div>
+        <div class="map-legend-section">
+          <div class="map-legend-title">Parks &amp; Landmarks</div>
+          <div class="map-pin">
+            <div class="pin-dot" style="background:#1baf7a"></div>
+            <div class="pin-text"><strong>El Retiro</strong> Peacock garden · rowboats · Crystal Palace</div>
+          </div>
+          <div class="map-pin">
+            <div class="pin-dot" style="background:#1baf7a"></div>
+            <div class="pin-text"><strong>Sabatini + Campo del Moro</strong> Royal Palace gardens</div>
+          </div>
+          <div class="map-pin">
+            <div class="pin-dot" style="background:#1baf7a"></div>
+            <div class="pin-text"><strong>Plaza Mayor</strong> Evening stroll · San Miguel market</div>
+          </div>
+        </div>
+        <div class="map-legend-section">
+          <div class="map-legend-title">Neighbourhoods</div>
+          <div class="map-pin">
+            <div class="pin-dot" style="background:#eda100"></div>
+            <div class="pin-text"><strong>Malasaña / Chueca</strong> Bakeries · bars · shopping</div>
+          </div>
+          <div class="map-pin">
+            <div class="pin-dot" style="background:#eda100"></div>
+            <div class="pin-text"><strong>La Latina / Lavapiés</strong> Street art · tabernas · El Rastro</div>
+          </div>
+          <div class="map-pin">
+            <div class="pin-dot" style="background:#eda100"></div>
+            <div class="pin-text"><strong>Chamberí</strong> Alma Nomad · El Doble · Casa Benigna</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ITINERARY DAYS -->
+<section style="padding: 8px 0 48px;">
+<div class="container">
+
+<!-- THU 16 -->
+<div class="day-section" id="thu">
+  <p class="day-eyebrow">Thursday · July 16</p>
+  <h2 class="day-headline">Arrival Day — Malasaña &amp; Gran Vía</h2>
+  <p class="day-theme">Start gentle — neighbourhood coffee, free museum, rooftop at golden hour</p>
+  <div class="timeline">
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1baf7a"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">9:00 am</span><span class="tag t-food">Bakery</span><span class="tl-name">Santo Bakehouse</span></div>
+        <p class="tl-note">Espíritu Santo 25, Malasaña. Cardamom bun + cañelé. Go early — sells out. Thu ✓ (closed Mon &amp; Thu — note: open Thu this week).</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#2a78d6"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">10:30 am</span><span class="tag t-walk">Walk</span><span class="tl-name">Malasaña &amp; Chueca wander</span></div>
+        <p class="tl-note">Carapazona stationery (C. de la Palma 67) → In-Verso Libros (Augusto Figueroa 21). Browse, buy things you don't need.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">1:00 pm</span><span class="tag t-food">Lunch</span><span class="tl-name">Bocado</span></div>
+        <p class="tl-note">Santa Teresa 1. Fried halloumi, grilled cheese, sweet potato fries. Switches to smash burgers at 8pm.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1baf7a"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">3:00 pm</span><span class="tag t-food">Coffee</span><span class="tl-name">Altered by We Crave + Jade Matcha Gallery</span></div>
+        <p class="tl-note">Conde de Xiquena 12. Black sesame latte or matcha. Jade Matcha is literally next door — matcha bar inside an art gallery.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#C60B1E"></div>
+      <div class="tl-card hotel-card">
+        <div class="tl-header"><span class="tl-time">4:30 pm</span><span class="tag t-hotel">🏨 Hotels</span><span class="tl-name">Split — freshen up</span></div>
+        <p class="tl-note" style="margin-bottom:10px;">From Justicia / Chueca (Conde de Xiquena area)</p>
+        <div class="hotel-split">
+          <div class="hotel-group">
+            <div class="hotel-group-name">Stuart &amp; Josianne</div>
+            <div class="hotel-group-hotel">Catalonia Plaza España</div>
+            <div class="hotel-group-route">Metro: Alonso Martínez → Tribunal → Plaza de España (~12 min). Or taxi ~€7, 8 min.</div>
+          </div>
+          <div class="hotel-group">
+            <div class="hotel-group-name">Steve &amp; Parin</div>
+            <div class="hotel-group-hotel">JW Marriott</div>
+            <div class="hotel-group-route">Metro: Alonso Martínez (L4) → Banco de España (~10 min). Or taxi ~€8, 10 min.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#4a3aa7"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">6:30 pm</span><span class="tag t-culture">Museum</span><span class="tl-name">Museo Reina Sofía</span></div>
+        <p class="tl-note">Meet at Santa Isabel 52. Free entry 7–9pm — queue from 6:30. Guernica on 2nd floor. Dalí and Miró rooms. Closed Tuesdays.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">7:00 pm</span><span class="tag t-drinks">Rooftop</span><span class="tl-name">Le Tavernier</span></div>
+        <p class="tl-note">Mesonero Romanos 13, Floor 8. Eye-level views of Gran Vía rooftops — unique angle. Reserve ahead. Opens 5pm.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1baf7a"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">9:00 pm</span><span class="tag t-food">Dinner</span><span class="tl-name">Quispe Madrid</span></div>
+        <p class="tl-note">Conde de Aranda 4, Salamanca. Best Peruvian in Madrid — ceviche, tiradito, pisco sours. 4.8★. Reserve ahead, opens 8pm.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#4a3aa7"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">11:00 pm</span><span class="tag t-night">Bar</span><span class="tl-name">Nightcap — Ficus Bar</span></div>
+        <p class="tl-note">Santo Tomé 8, Chueca. African-botanical cocktail bar — tropical jungle interior, candlelit. Try the Aztec Smoke. Thu open until 2am. 5 min from Quispe.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FRI 17 -->
+<div class="day-section" id="fri">
+  <p class="day-eyebrow">Friday · July 17</p>
+  <h2 class="day-headline">Art Triangle + Lavapiés Street Art</h2>
+  <p class="day-theme">Prado in the morning, street art in the afternoon, world's oldest restaurant at night</p>
+  <div class="timeline">
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1baf7a"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">9:00 am</span><span class="tag t-food">Brunch</span><span class="tl-name">Bucólico Café</span></div>
+        <p class="tl-note">Barbieri 4, Chueca. 4.8★ Matcha with coconut water, Iberian ham toast. Go before 9:30 — queues build fast. 90-min table limit.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#4a3aa7"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">10:30 am</span><span class="tag t-culture">Museum</span><span class="tl-name">Museo del Prado</span></div>
+        <p class="tl-note">Pre-book tickets. Allow 2.5–3 hrs. Velázquez's Las Meninas, Goya's Black Paintings, Caravaggio. Free entry 6–8pm if you want to return.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">1:30 pm</span><span class="tag t-food">Lunch</span><span class="tl-name">La Falda</span></div>
+        <p class="tl-note">Miguel Servet 4, Lavapiés. Galicia-style Betanzos tortilla — runny and creamy, unlike anything you'll find elsewhere. Kitchen closes 3:45pm.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#2a78d6"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">3:30 pm</span><span class="tag t-walk">Walk</span><span class="tl-name">Lavapiés Street Art</span></div>
+        <p class="tl-note">Okuda + Bordalo II Chimpancé mural (Embajadores 33) → Esta es una Plaza community garden (Dr. Fourquet 24) → Calle Embajadores mural corridor. ~1.5 hrs on foot.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#C60B1E"></div>
+      <div class="tl-card hotel-card">
+        <div class="tl-header"><span class="tl-time">4:30 pm</span><span class="tag t-hotel">🏨 Hotels</span><span class="tl-name">Split — freshen up</span></div>
+        <p class="tl-note" style="margin-bottom:10px;">From La Casa Encendida / Lavapiés (Ronda de Valencia)</p>
+        <div class="hotel-split">
+          <div class="hotel-group">
+            <div class="hotel-group-name">Stuart &amp; Josianne</div>
+            <div class="hotel-group-hotel">Catalonia Plaza España</div>
+            <div class="hotel-group-route">Metro: Embajadores (L3) → Ópera → Plaza de España (~12 min). Or taxi ~€8.</div>
+          </div>
+          <div class="hotel-group">
+            <div class="hotel-group-name">Steve &amp; Parin</div>
+            <div class="hotel-group-hotel">JW Marriott</div>
+            <div class="hotel-group-route">Metro: Embajadores (L3) → Sol (2 stops, ~8 min). Walk 5 min to hotel. Or taxi ~€7.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">7:30 pm</span><span class="tag t-drinks">Taberna</span><span class="tl-name">Aperitivo — Cervecería La Paloma 85</span></div>
+        <p class="tl-note">Calle de Toledo 85. Gambas a la plancha + free boquerones tapa with every drink. Standing bar, tin counter, pure old Madrid.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1baf7a"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">9:00 pm</span><span class="tag t-food">Dinner ⭐</span><span class="tl-name">Sobrino de Botín</span></div>
+        <p class="tl-note">Cuchilleros 17, near Plaza Mayor. World's oldest restaurant, est. 1725 (Guinness Record). Order the cochinillo asado — suckling pig. Live band in the evenings. Book weeks ahead.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#4a3aa7"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">11:30 pm</span><span class="tag t-night">Bar</span><span class="tl-name">Nightcap — Salmón Gurú</span></div>
+        <p class="tl-note">Echegaray 21, Barrio de las Letras. One of the world's best cocktail bars. Creative drinks, wild decor. 3 min walk from Botín. Open Fri until late — no reservation needed for the bar.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SAT 18 -->
+<div class="day-section" id="sat">
+  <p class="day-eyebrow">Saturday · July 18</p>
+  <h2 class="day-headline">El Retiro + Rooftops + 61.Sixtyone</h2>
+  <p class="day-theme">The classic Madrid Saturday — park, royal gardens, views, late night</p>
+  <div class="timeline">
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1baf7a"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">9:30 am</span><span class="tag t-food">Bakery</span><span class="tl-name">Alma Nomad Bakery</span></div>
+        <p class="tl-note">Santa Feliciana 10, Chamberí. Legendary almond croissant + kouign-amann. Queue is worth it. Opens 8am Sat.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1baf7a"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">11:00 am</span><span class="tag t-relax">Park</span><span class="tl-name">El Retiro Park</span></div>
+        <p class="tl-note">Cecilio Rodríguez peacock garden (opens 10am) → Parterre Garden (oldest tree 1632) → Alfonso XII monument at the lake → rent a rowboat. Allow 2–3 hrs.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">2:00 pm</span><span class="tag t-food">Lunch</span><span class="tl-name">Juana la Loca</span></div>
+        <p class="tl-note">Recoletos 10, Salamanca. The tortilla de patatas — genuinely life-changing. Also: huevos rotos con trufa, foie pintxos. Opens 1pm Sat. Book ahead.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#2a78d6"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">4:00 pm</span><span class="tag t-walk">Walk</span><span class="tl-name">Sabatini Gardens + Campo del Moro</span></div>
+        <p class="tl-note">Formal gardens behind Royal Palace — very photogenic. Walk around to Campo del Moro for the hidden royal gardens with swans. Very quiet, locals' secret.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#C60B1E"></div>
+      <div class="tl-card hotel-card">
+        <div class="tl-header"><span class="tl-time">4:30 pm</span><span class="tag t-hotel">🏨 Hotels</span><span class="tl-name">Split — freshen up</span></div>
+        <p class="tl-note" style="margin-bottom:10px;">From Sabatini Gardens / Campo del Moro (Calle Bailén area)</p>
+        <div class="hotel-split">
+          <div class="hotel-group">
+            <div class="hotel-group-name">Stuart &amp; Josianne</div>
+            <div class="hotel-group-hotel">Catalonia Plaza España</div>
+            <div class="hotel-group-route">10 min walk — Sabatini is just up the hill from Plaza de España. Easiest return of the trip.</div>
+          </div>
+          <div class="hotel-group">
+            <div class="hotel-group-name">Steve &amp; Parin</div>
+            <div class="hotel-group-hotel">JW Marriott</div>
+            <div class="hotel-group-route">Metro: Ópera (L2/L5) → Sol (L1) ~8 min + walk. Or taxi ~€9, 12 min.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">6:00 pm</span><span class="tag t-drinks">Rooftop</span><span class="tl-name">The Hat Rooftop</span></div>
+        <p class="tl-note">Imperial 9, near Plaza Mayor. Best-rated rooftop (4.7★) — chilled, unpretentious, great prices. Views toward the old city. Opens 1pm Sat.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">8:00 pm</span><span class="tag t-drinks">Rooftop</span><span class="tl-name">Makáa Rooftop — pre-dinner cocktails</span></div>
+        <p class="tl-note">Plaza del Carmen 1. Rooftop restaurant with DJ and stunning city views. Great cocktails. Perfect bridge before your dinner booking.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#4a3aa7"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">9:30 pm</span><span class="tag t-night">Dinner · Booked</span><span class="tl-name">61.Sixtyone ✓</span></div>
+        <p class="tl-note">José Abascal 61, Chamberí. Already booked at 9:30. Tacos are the highlight. Turns into a full club at midnight with DJ — Sat until 5:30am.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SUN 19 -->
+<div class="day-section" id="sun">
+  <p class="day-eyebrow">Sunday · July 19</p>
+  <h2 class="day-headline">El Rastro + Brach + World Cup Final ⚽</h2>
+  <p class="day-theme">Flea market, trendy lunch, Salmón Gurú, then the biggest match in the world</p>
+  <div class="timeline">
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">9:00 am</span><span class="tag t-market">Market</span><span class="tl-name">El Rastro Flea Market</span></div>
+        <p class="tl-note">Ribera de Curtidores. Sunday only, 9am–3pm. Start at La Latina end, walk downhill. End at Cervecería La Paloma 85 (Calle Toledo 85) — gambas + cold beer. Closes 4pm.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1baf7a"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">11:30 am</span><span class="tag t-food">Brunch</span><span class="tl-name">Casa Salesas</span></div>
+        <p class="tl-note">Fernando VI 6, Chueca. Opens noon Sun. Freshly baked bread with butter, truffle fries, Russian salad. Excellent lazy Sunday energy.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1baf7a"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">1:30 pm</span><span class="tag t-food">Lunch</span><span class="tl-name">Brach Madrid</span></div>
+        <p class="tl-note">Philippe Starck-designed Mediterranean brasserie. Serious see-and-be-seen energy, great cocktail bar. Perfect for a long Sunday lunch. Book ahead — open Sun.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#4a3aa7"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">5:00 pm</span><span class="tag t-culture">Museum</span><span class="tl-name">Museo del Prado — free entry</span></div>
+        <p class="tl-note">Free entry Sun 5–7pm. Queue just before 5. Velázquez + Goya. 90 mins max — need to be out by 7pm. Then walk through Retiro to Palacio de Cristal.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#C60B1E"></div>
+      <div class="tl-card hotel-card">
+        <div class="tl-header"><span class="tl-time">7:00 pm</span><span class="tag t-hotel">🏨 Hotels</span><span class="tl-name">Split — freshen up before the Final</span></div>
+        <p class="tl-note" style="margin-bottom:10px;">From El Retiro / Palacio de Cristal area</p>
+        <div class="hotel-split">
+          <div class="hotel-group">
+            <div class="hotel-group-name">Stuart &amp; Josianne</div>
+            <div class="hotel-group-hotel">Catalonia Plaza España</div>
+            <div class="hotel-group-route">Metro: Retiro (L9) → Nuevos Ministerios → Plaza de España (L10) ~18 min. Or taxi ~€11.</div>
+          </div>
+          <div class="hotel-group">
+            <div class="hotel-group-name">Steve &amp; Parin</div>
+            <div class="hotel-group-hotel">JW Marriott</div>
+            <div class="hotel-group-route">Metro: Retiro (L9) → Banco de España (1 stop, ~8 min). Walk 5 min. Or taxi ~€8.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">7:30 pm</span><span class="tag t-drinks">Cocktails</span><span class="tl-name">Salmón Gurú — pre-match</span></div>
+        <p class="tl-note">Echegaray 21, Barrio de las Letras. One of the world's best cocktail bars. Creative drinks, wild decor. Open Sun. Leave by 8:45 for kickoff.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1B6B3A"></div>
+      <div class="tl-card wc-card">
+        <div class="tl-header"><span class="tl-time">9:00 pm</span><span class="tag t-wc">⚽ World Cup Final</span><span class="tl-name">Kickoff — Madrid time (3pm ET)</span></div>
+        <p class="tl-note">MetLife Stadium, New Jersey. Halftime show: <strong>Madonna, Shakira &amp; BTS</strong> — first halftime show in World Cup history.<br><br>
+        <strong>Best spots:</strong> Plaza de Cibeles (giant outdoor screen — where Spain celebrated 2010, free) · James Joyce Irish Pub, Calle Alcalá (reserve now, English commentary) · Cervecería Deportiva, Calle las Veneras 7.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#4a3aa7"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">~11:30 pm</span><span class="tag t-night">Night</span><span class="tl-name">After — Ponja Nikkei or Cibeles</span></div>
+        <p class="tl-note">If Spain win → Plaza de Cibeles. The whole city comes out. Otherwise, Ponja Nikkei (Santa Teresa 16) open Sun until 11pm — Japanese-Peruvian, great sake. Or Harrison 1933 for late cocktails.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MON 20 -->
+<div class="day-section" id="mon">
+  <p class="day-eyebrow">Monday · July 20 · ends 7pm</p>
+  <h2 class="day-headline">Chamberí Morning + Siete Tetas Sunset</h2>
+  <p class="day-theme">Most museums closed Mondays — focus on neighbourhood walks, best paella, final sunset</p>
+  <div class="timeline">
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1baf7a"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">9:00 am</span><span class="tag t-food">Brunch</span><span class="tl-name">La Casa Amande</span></div>
+        <p class="tl-note">Calle de Murillo 1, Plaza de Olavide, Chamberí. Run by two Colombian sisters. Turkish eggs, mushroom toast, legendary banana bread. Opens 8:30am.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">10:30 am</span><span class="tag t-walk">Chamberí</span><span class="tl-name">Alma Nomad + neighbourhood wander</span></div>
+        <p class="tl-note">Santa Feliciana 10 — pick up pastries. Stroll Plaza de Olavide. Window-shop around the barrio.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">12:00 pm</span><span class="tag t-drinks">Wine bar</span><span class="tl-name">Casa Luna</span></div>
+        <p class="tl-note">Corredera Baja de San Pablo 4. Opens 11:30am. Charcuterie boards, cheese plates, excellent wine by the glass. Long lazy morning-into-lunch vibe.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1baf7a"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">2:00 pm</span><span class="tag t-food">Lunch ⭐</span><span class="tl-name">Casa Benigna</span></div>
+        <p class="tl-note">Benigno Soto 9, Chamartín. Best paella in Madrid. House-cured salmon amuse, chocolate finish. Ring the brass knocker to enter. Mon lunch 1:30–4pm ✓. Reserve 4–6 weeks ahead.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1baf7a"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">4:00 pm</span><span class="tag t-relax">Park</span><span class="tl-name">El Retiro — final stroll</span></div>
+        <p class="tl-note">Florida Park terrace for a coffee. Walk to Palacio de Cristal (glass palace). Always free. Say goodbye to the park.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#C60B1E"></div>
+      <div class="tl-card hotel-card">
+        <div class="tl-header"><span class="tl-time">4:30 pm</span><span class="tag t-hotel">🏨 Hotels</span><span class="tl-name">Split — then regroup for Siete Tetas</span></div>
+        <p class="tl-note" style="margin-bottom:10px;">From El Retiro. Then share a taxi to Vallecas (~20 min from both hotels) — go together, it's out east.</p>
+        <div class="hotel-split">
+          <div class="hotel-group">
+            <div class="hotel-group-name">Stuart &amp; Josianne</div>
+            <div class="hotel-group-hotel">Catalonia Plaza España</div>
+            <div class="hotel-group-route">Metro: Retiro (L9) → Nuevos Ministerios → Plaza de España ~18 min. Or taxi ~€11.</div>
+          </div>
+          <div class="hotel-group">
+            <div class="hotel-group-name">Steve &amp; Parin</div>
+            <div class="hotel-group-hotel">JW Marriott</div>
+            <div class="hotel-group-route">Metro: Retiro (L9) → Banco de España (~8 min). Or taxi ~€8.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1baf7a"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">5:30 pm</span><span class="tag t-relax">Viewpoint</span><span class="tl-name">Parque de las Siete Tetas — final sunset</span></div>
+        <p class="tl-note">Shared taxi from both hotels (~20 min, ~€15–18). 360° panoramic views of all Madrid. Locals bring wine and sit on the hill. The best possible way to end the trip. Free.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div><!-- /container -->
+</section>
+
+<!-- RESERVATIONS -->
+<section class="res-section" id="reservations">
+  <div class="container">
+    <h2 class="res-title">Reservations &amp; bookings</h2>
+    <p class="res-sub">Book these now — several fill weeks in advance</p>
+    <div class="res-grid">
+
+      <div class="res-card">
+        <div class="res-card-label">🔴 Book immediately</div>
+        <div class="res-item"><span class="res-item-name">Quispe Madrid</span><span class="res-item-when">Thu dinner</span></div>
+        <div class="res-item"><span class="res-item-name">Sobrino de Botín</span><span class="res-item-when">Fri dinner</span></div>
+        <div class="res-item"><span class="res-item-name">61.Sixtyone</span><span class="res-item-when">Sat 9:30pm ✓ booked</span></div>
+        <div class="res-item"><span class="res-item-name">Brach Madrid</span><span class="res-item-when">Sun lunch</span></div>
+        <div class="res-item"><span class="res-item-name">Casa Benigna</span><span class="res-item-when">Mon lunch</span></div>
+        <div class="res-item"><span class="res-item-name">James Joyce Irish Pub</span><span class="res-item-when">Sun Final 9pm</span></div>
+      </div>
+
+      <div class="res-card">
+        <div class="res-card-label">🎟️ Pre-book tickets</div>
+        <div class="res-item"><span class="res-item-name">Museo del Prado</span><span class="res-item-when">museodelprado.es</span></div>
+        <div class="res-item"><span class="res-item-name">Museo Reina Sofía</span><span class="res-item-when">Free 7–9pm Thu</span></div>
+        <div class="res-item"><span class="res-item-name">Le Tavernier rooftop</span><span class="res-item-when">Thu 7pm</span></div>
+        <div class="res-item"><span class="res-item-name">Juana la Loca</span><span class="res-item-when">Sat lunch</span></div>
+      </div>
+
+      <div class="res-card">
+        <div class="res-card-label">⏰ Key closing times</div>
+        <div class="res-item"><span class="res-item-name">La Falda kitchen</span><span class="res-item-when">closes 3:45pm</span></div>
+        <div class="res-item"><span class="res-item-name">La Paloma 85</span><span class="res-item-when">closes 4pm Sun</span></div>
+        <div class="res-item"><span class="res-item-name">Alcázar Toledo</span><span class="res-item-when">closes 5pm</span></div>
+        <div class="res-item"><span class="res-item-name">Prado free entry</span><span class="res-item-when">Mon–Sat 6–8pm / Sun 5–7pm</span></div>
+        <div class="res-item"><span class="res-item-name">Reina Sofía</span><span class="res-item-when">closed Tuesdays</span></div>
+        <div class="res-item"><span class="res-item-name">Casa Benigna</span><span class="res-item-when">closed Sundays</span></div>
+      </div>
+
+      <div class="res-card">
+        <div class="res-card-label">⚽ World Cup Final · Sun 19 Jul</div>
+        <div class="res-item"><span class="res-item-name">Kickoff</span><span class="res-item-when">9:00pm Madrid (3pm ET)</span></div>
+        <div class="res-item"><span class="res-item-name">Venue</span><span class="res-item-when">MetLife, New Jersey</span></div>
+        <div class="res-item"><span class="res-item-name">Halftime</span><span class="res-item-when">Madonna · Shakira · BTS</span></div>
+        <div class="res-item"><span class="res-item-name">Plaza de Cibeles</span><span class="res-item-when">Free outdoor screen</span></div>
+        <div class="res-item"><span class="res-item-name">James Joyce Pub</span><span class="res-item-when">Reserve now</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  Madrid · July 16–20, 2026 · <span>Stuart &amp; Josianne · Steve &amp; Parin</span>
+</footer>
+
+<script src="./Madrid · July 16–20, 2026_files/leaflet.js"></script>
+<script>
+  // ── Leaflet map ──────────────────────────────────────────────────
+  const map = L.map('leaflet-map', { zoomControl: true, scrollWheelZoom: false })
+    .setView([40.416, -3.703], 14);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    attribution: '© OpenStreetMap contributors © CARTO',
+    maxZoom: 19
+  }).addTo(map);
+
+  function pin(color) {
+    return L.divIcon({
+      className: '',
+      html: `<div style="width:14px;height:14px;border-radius:50%;background:${color};border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4)"></div>`,
+      iconSize: [14, 14], iconAnchor: [7, 7]
+    });
+  }
+
+  const markers = [
+    // Hotels
+    { lat:40.4203, lng:-3.7115, color:'#2a78d6', label:'<b>Catalonia Plaza España</b><br>Stuart & Josianne' },
+    { lat:40.4168, lng:-3.7001, color:'#D85A30', label:'<b>JW Marriott</b><br>Steve & Parin' },
+    // Museums
+    { lat:40.4138, lng:-3.6921, color:'#4a3aa7', label:'<b>Museo del Prado</b><br>Free Mon–Sat 6–8pm' },
+    { lat:40.4079, lng:-3.6946, color:'#4a3aa7', label:'<b>Museo Reina Sofía</b><br>Free 7–9pm · closed Tue' },
+    // Parks & landmarks
+    { lat:40.4153, lng:-3.6835, color:'#1baf7a', label:'<b>El Retiro Park</b><br>Peacock garden · rowboats' },
+    { lat:40.4203, lng:-3.7140, color:'#1baf7a', label:'<b>Sabatini Gardens</b><br>Behind Royal Palace' },
+    { lat:40.4183, lng:-3.7173, color:'#1baf7a', label:'<b>Campo del Moro</b><br>Hidden royal gardens · swans' },
+    { lat:40.4155, lng:-3.7074, color:'#1baf7a', label:'<b>Plaza Mayor</b><br>Evening stroll' },
+    { lat:40.4198, lng:-3.7142, color:'#1baf7a', label:'<b>Palacio Real</b>' },
+    { lat:40.4199, lng:-3.6887, color:'#1baf7a', label:'<b>Puerta de Alcalá</b>' },
+    // Restaurants & bars
+    { lat:40.4215, lng:-3.6880, color:'#eda100', label:'<b>Quispe Madrid</b><br>Thu dinner · Peruvian 4.8★' },
+    { lat:40.4141, lng:-3.7080, color:'#eda100', label:'<b>Sobrino de Botín</b><br>Fri dinner · est. 1725' },
+    { lat:40.4237, lng:-3.6950, color:'#eda100', label:'<b>Ficus Bar</b><br>Thu nightcap · cocktails' },
+    { lat:40.4149, lng:-3.6995, color:'#eda100', label:'<b>Salmón Gurú</b><br>Fri & Sun cocktails' },
+    { lat:40.4217, lng:-3.6903, color:'#eda100', label:'<b>Juana la Loca</b><br>Sat lunch · tortilla' },
+    { lat:40.4217, lng:-3.6901, color:'#eda100', label:'<b>Casa Canito</b><br>Sat lunch backup' },
+    { lat:40.4141, lng:-3.7080, color:'#eda100', label:'<b>La Paloma 85</b><br>Calle Toledo 85 · gambas' },
+    { lat:40.4383, lng:-3.6995, color:'#eda100', label:'<b>61.Sixtyone</b><br>Sat dinner · booked 9:30' },
+    { lat:40.4254, lng:-3.6950, color:'#eda100', label:'<b>Ficus Bar</b><br>Santo Tomé 8' },
+    { lat:40.4188, lng:-3.7028, color:'#eda100', label:'<b>Makáa Rooftop</b><br>Sat pre-dinner' },
+    { lat:40.4207, lng:-3.6982, color:'#eda100', label:'<b>Bucólico Café</b><br>Fri brunch' },
+    { lat:40.4253, lng:-3.7048, color:'#eda100', label:'<b>Casa Salesas</b><br>Sun brunch' },
+    { lat:40.4482, lng:-3.6743, color:'#eda100', label:'<b>Casa Benigna</b><br>Mon lunch · best paella' },
+    { lat:40.4342, lng:-3.7007, color:'#eda100', label:'<b>La Casa Amande</b><br>Mon brunch' },
+    { lat:40.4205, lng:-3.7055, color:'#eda100', label:'<b>Le Tavernier</b><br>Thu rooftop' },
+    { lat:40.4143, lng:-3.7010, color:'#eda100', label:'<b>The Hat Rooftop</b><br>Sat sunset drinks' },
+    // El Rastro
+    { lat:40.4070, lng:-3.7073, color:'#C60B1E', label:'<b>El Rastro</b><br>Sun only · 9am–3pm' },
+    // Street art
+    { lat:40.4084, lng:-3.7046, color:'#534AB7', label:'<b>Chimpancé Mural</b><br>Okuda + Bordalo II' },
+    { lat:40.4073, lng:-3.6985, color:'#534AB7', label:'<b>Esta es una Plaza</b><br>Community garden' },
+    // World Cup
+    { lat:40.4198, lng:-3.6894, color:'#1B6B3A', label:'<b>⚽ Plaza de Cibeles</b><br>World Cup Final screen · Sun 9pm' },
+  ];
+
+  markers.forEach(m => {
+    L.marker([m.lat, m.lng], { icon: pin(m.color) })
+      .addTo(map)
+      .bindPopup(m.label, { maxWidth: 200, className: 'map-popup' });
+  });
+</script>
+<script>
+  const navLinks = document.querySelectorAll('.day-nav a');
+  const sections = ['map','thu','fri','sat','sun','mon','reservations'].map(id => document.getElementById(id));
+
+  function updateNav() {
+    let current = 'map';
+    const scrollY = window.scrollY + 80;
+    sections.forEach(s => { if (s && s.offsetTop <= scrollY) current = s.id; });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+</script>
+
+
+
+</body></html>
