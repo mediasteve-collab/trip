@@ -15,13 +15,13 @@
   :root {
     --navy: #0F1B35;
     --navy-mid: #1A2D52;
-    --gold: #C8973A;
-    --gold-light: #E8BF6A;
+    --gold: #3B82F6;
+    --gold-light: #93C5FD;
     --cream: #F9F5EF;
     --warm-white: #FFFDF9;
     --text: #1A1A2E;
     --muted: #6B7280;
-    --border: rgba(200,151,58,0.2);
+    --border: rgba(59,130,246,0.2);
     --red: #C60B1E;
   }
 
@@ -38,69 +38,76 @@
 
   /* ── HERO ── */
   .hero {
-    background: var(--navy);
     color: #fff;
-    padding: 80px 24px 64px;
+    padding: 28px 24px 24px;
     text-align: center;
     position: relative;
     overflow: hidden;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .hero::before {
-    content: '';
+  .hero-bg {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(200,151,58,0.18) 0%, transparent 70%);
-    pointer-events: none;
+    background-image: url('https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=1600&q=80&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center 55%;
   }
-  .hero-flag { font-size: 32px; margin-bottom: 20px; }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10,20,45,0.72) 0%, rgba(10,20,45,0.88) 100%);
+  }
+  .hero-content { position: relative; z-index: 1; width: 100%; }
+  .hero-flag { font-size: 18px; margin-bottom: 6px; }
   .hero h1 {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(42px, 8vw, 88px);
+    font-size: clamp(26px, 4vw, 42px);
     font-weight: 700;
-    letter-spacing: -1px;
-    line-height: 1.05;
+    letter-spacing: 2px;
+    line-height: 1.1;
     color: #fff;
+    font-style: normal;
+    text-transform: uppercase;
   }
-  .hero h1 em {
-    font-style: italic;
-    color: var(--gold-light);
-    font-weight: 400;
-  }
+  .hero h1 em { font-style: normal; color: #fff; font-weight: 700; }
   .hero-sub {
-    margin-top: 20px;
-    font-size: 14px;
+    margin-top: 4px;
+    font-size: 11px;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: rgba(255,255,255,0.55);
     font-weight: 500;
   }
   .hero-meta {
-    margin-top: 36px;
+    margin-top: 14px;
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 16px;
     flex-wrap: wrap;
   }
   .hero-meta-item { text-align: center; }
   .hero-meta-item .val {
     display: block;
     font-family: 'Playfair Display', serif;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 700;
-    color: var(--gold-light);
+    color: #fff;
   }
   .hero-meta-item .lbl {
     display: block;
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: rgba(255,255,255,0.45);
-    margin-top: 2px;
+    margin-top: 1px;
   }
   .hero-divider {
     width: 1px;
-    height: 40px;
-    background: rgba(255,255,255,0.15);
+    height: 24px;
+    background: rgba(255,255,255,0.2);
     align-self: center;
   }
 
@@ -110,7 +117,7 @@
     top: 0;
     z-index: 100;
     background: var(--navy);
-    border-bottom: 1px solid rgba(200,151,58,0.3);
+    border-bottom: 1px solid rgba(59,130,246,0.3);
     display: flex;
     gap: 0;
     overflow-x: auto;
@@ -173,7 +180,7 @@
   .map-frame {
     border-radius: 12px;
     overflow: hidden;
-    border: 1px solid rgba(200,151,58,0.25);
+    border: 1px solid rgba(59,130,246,0.25);
     height: 420px;
     background: #1a2d52;
   }
@@ -188,7 +195,7 @@
     font-weight: 600;
     margin-bottom: 8px;
     padding-bottom: 4px;
-    border-bottom: 1px solid rgba(200,151,58,0.2);
+    border-bottom: 1px solid rgba(59,130,246,0.2);
   }
   .map-pin {
     display: flex;
@@ -325,7 +332,7 @@
   }
   .tl-card.hotel-card {
     background: #FFF9F0;
-    border-color: rgba(200,151,58,0.35);
+    border-color: rgba(59,130,246,0.35);
   }
   .tl-card.wc-card {
     background: #F0FFF4;
@@ -384,7 +391,7 @@
     background: rgba(255,255,255,0.7);
     border-radius: 8px;
     padding: 10px 12px;
-    border: 1px solid rgba(200,151,58,0.2);
+    border: 1px solid rgba(59,130,246,0.2);
   }
   .hotel-group-name {
     font-size: 11px;
@@ -425,7 +432,7 @@
   }
   .res-card {
     background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(200,151,58,0.2);
+    border: 1px solid rgba(59,130,246,0.2);
     border-radius: 12px;
     padding: 16px;
   }
@@ -457,7 +464,7 @@
 
   footer {
     background: var(--navy);
-    border-top: 1px solid rgba(200,151,58,0.15);
+    border-top: 1px solid rgba(59,130,246,0.15);
     padding: 28px 24px;
     text-align: center;
     font-size: 12px;
@@ -470,8 +477,11 @@
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
   <div class="hero-flag">🇪🇸</div>
-  <h1>Ma<em>drid</em></h1>
+  <h1>Madrid</h1>
   <p class="hero-sub">July 16 – 20 · 2026</p>
   <div class="hero-meta">
     <div class="hero-meta-item">
@@ -493,6 +503,7 @@
       <span class="val">40+</span>
       <span class="lbl">Places</span>
     </div>
+  </div>
   </div>
 </section>
 
@@ -558,15 +569,15 @@
         <div class="map-legend-section">
           <div class="map-legend-title">Neighbourhoods</div>
           <div class="map-pin">
-            <div class="pin-dot" style="background:#eda100"></div>
+            <div class="pin-dot" style="background:#3B82F6"></div>
             <div class="pin-text"><strong><a href="https://www.google.com/maps/search/Malasana+Madrid" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Malasaña / Chueca</a></strong> Bakeries · bars · shopping</div>
           </div>
           <div class="map-pin">
-            <div class="pin-dot" style="background:#eda100"></div>
+            <div class="pin-dot" style="background:#3B82F6"></div>
             <div class="pin-text"><strong><a href="https://www.google.com/maps/search/La+Latina+Madrid" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">La Latina / Lavapiés</a></strong> Street art · tabernas · El Rastro</div>
           </div>
           <div class="map-pin">
-            <div class="pin-dot" style="background:#eda100"></div>
+            <div class="pin-dot" style="background:#3B82F6"></div>
             <div class="pin-text"><strong><a href="https://www.google.com/maps/search/Chamberi+Madrid" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Chamberí</a></strong> Alma Nomad · El Doble · Casa Benigna</div>
           </div>
         </div>
@@ -612,7 +623,7 @@
 
     <div class="dist">↓ &nbsp;~6 min walk · same neighbourhood</div>
     <div class="tl-item">
-      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-dot" style="background:#3B82F6"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">1:00 pm</span><span class="tag t-food">Lunch</span><span class="tl-name"><a href="https://www.google.com/maps/search/Bocado+Madrid+Santa+Teresa+1" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Bocado</a></span></div>
         <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Alonso Martínez (L4))</span> Santa Teresa 1. Fried halloumi, grilled cheese, sweet potato fries. Switches to smash burgers at 8pm.</p>
@@ -653,19 +664,11 @@
 
     <div class="dist">↓ &nbsp;~10 min walk to Gran Vía</div>
     <div class="tl-item">
-      <div class="tl-dot" style="background:#eda100"></div>
-      <div class="tl-card">
-        <div class="tl-header"><span class="tl-time">5:00 pm</span><span class="tag t-drinks">Rooftop</span><span class="tl-name"><a href="https://www.google.com/maps/search/Le+Tavernier+Madrid+Mesonero+Romanos+13" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Le Tavernier</a></span></div>
-        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Gran Vía (L1/L5))</span> Mesonero Romanos 13, Floor 8. Eye-level views of Gran Vía rooftops — unique angle. ⚠️ Walk-in only — go early to secure a spot, opens 5pm. If full: <strong>Sky44</strong> (Gran Vía 44), <strong>DoñaLuz</strong> (Montera 10, Fl12), or <strong>El Jardín de Diana</strong> (Gran Vía 31, Fl10) are all within 5 min walk. Leave by 6:15 for Reina Sofía.</p>
-      </div>
-    </div>
-
-    <div class="dist">↓ &nbsp;~15 min walk · Gran Vía → Atocha</div>
-    <div class="tl-item">
       <div class="tl-dot" style="background:#4a3aa7"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">6:30 pm</span><span class="tag t-culture">Museum</span><span class="tl-name"><a href="https://www.google.com/maps/search/Museo+Reina+Sofia+Madrid" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Museo Reina Sofía</a></span></div>
-        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Atocha (L1))</span> Queue from 6:30 at Santa Isabel 52 — free entry from 7pm. Guernica on 2nd floor, Dalí and Miró rooms. ⚠️ Leave by 8:15pm to make Quispe at 8:30 — you'll get ~75 mins inside which is enough. Closed Tuesdays.</p>
+        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Atocha (L1))</span> Queue from 6:30 at Santa Isabel 52 — free entry from 7pm. Guernica on 2nd floor, Dalí and Miró rooms. ⚠️ Leave by 8:15pm to make Quispe at 8:30 — you'll get ~75 mins inside which is enough. Closed Tuesdays.<br><br>
+        <em>Optional instead or before:</em> <strong><a href="https://www.google.com/maps/search/Le+Tavernier+Madrid+Mesonero+Romanos+13" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Le Tavernier rooftop</a></strong> (Mesonero Romanos 13, Fl8) walk-in from 5pm. If full: Sky44 (Gran Vía 44), DoñaLuz (Montera 10 Fl12), El Jardín de Diana (Gran Vía 31).</p>
       </div>
     </div>
 
@@ -721,7 +724,7 @@
 
     <div class="dist">↓ &nbsp;~5 min walk · same block</div>
     <div class="tl-item">
-      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-dot" style="background:#3B82F6"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">2:00 pm</span><span class="tag t-food">Lunch</span><span class="tl-name"><a href="https://www.google.com/maps/search/La+Falda+Madrid+Miguel+Servet+4" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">La Falda</a></span><span style="color:#1baf7a;font-size:13px;margin-left:6px;font-weight:600;">✓</span></div>
         <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Lavapiés (L3))</span> Miguel Servet 4, Lavapiés. Galicia-style Betanzos tortilla — runny and creamy, unlike anything you'll find elsewhere. Booked 2pm for 5 ✓ · Kitchen closes 3:45pm.</p>
@@ -739,7 +742,7 @@
 
     <div class="dist">↓ &nbsp;~5 min walk · same block</div>
     <div class="tl-item">
-      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-dot" style="background:#3B82F6"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">4:00 pm</span><span class="tag t-walk">Browse</span><span class="tl-name"><a href="https://www.google.com/maps/search/Mercado+Anton+Martin+Madrid+Santa+Isabel+5" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Mercado Antón Martín</a></span></div>
         <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Antón Martín (L1))</span> Santa Isabel 5. Look for the massive Fin DAC mural on the corner — striking Eurasian female figure in stencil + colour. Browse the market inside for 30–45 mins, grab a coffee or a snack. Fills the gap before heading back to hotels.</p>
@@ -771,19 +774,29 @@
 
     <div class="dist">↓ &nbsp;~5 min walk to Plaza Mayor</div>
     <div class="tl-item">
-      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-dot" style="background:#3B82F6"></div>
       <div class="tl-card">
-        <div class="tl-header"><span class="tl-time">7:30 pm</span><span class="tag t-drinks">Taberna</span><span class="tl-name"><a href="https://www.google.com/maps/search/Cerveceria+La+Paloma+85+Madrid+Calle+Toledo" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Aperitivo — Cervecería La Paloma 85</a></span></div>
+        <div class="tl-header"><span class="tl-time">6:30 pm</span><span class="tag t-drinks">Taberna</span><span class="tl-name"><a href="https://www.google.com/maps/search/Cerveceria+La+Paloma+85+Madrid+Calle+Toledo" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Aperitivo — Cervecería La Paloma 85</a></span></div>
         <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: La Latina (L5))</span> Calle de Toledo 85. Gambas a la plancha + free boquerones tapa with every drink. Standing bar, tin counter, pure old Madrid.</p>
       </div>
     </div>
 
     <div class="dist">↓ &nbsp;~3 min walk to Barrio de las Letras</div>
+    <div class="dist">↓ &nbsp;~20 min taxi to Vallecas</div>
     <div class="tl-item">
       <div class="tl-dot" style="background:#1baf7a"></div>
       <div class="tl-card">
-        <div class="tl-header"><span class="tl-time">9:00 pm</span><span class="tag t-food">Dinner ⭐</span><span class="tl-name"><a href="https://www.google.com/maps/search/Casa+Lucio+Madrid+Cava+Baja+35" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Casa Lucio</a></span></div>
-        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: La Latina (L5))</span> Cava Baja 35, La Latina. Madrid institution since 1974 — King Juan Carlos's regular table. Famous for huevos rotos (broken eggs over jamón and fries) and the roast lamb. 5 min walk from La Paloma 85. Reserve ahead.</p>
+        <div class="tl-header"><span class="tl-time">7:30 pm</span><span class="tag t-relax">Viewpoint</span><span class="tl-name"><a href="https://www.google.com/maps/search/Parque+de+las+Siete+Tetas+Madrid+Vallecas" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Parque de las Siete Tetas</a></span></div>
+        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Portazgo (L1))</span> Vallecas — shared taxi ~20 min from La Latina (~€12 total). 360° panoramic views of all Madrid. Sunset ~9:30pm — you'll catch the golden hour light. Allow 45 mins. Taxi back to La Latina for dinner.</p>
+      </div>
+    </div>
+
+    <div class="dist">↓ &nbsp;~20 min taxi back to La Latina</div>
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1baf7a"></div>
+      <div class="tl-card">
+        <div class="tl-header"><span class="tl-time">9:30 pm</span><span class="tag t-food">Dinner ⭐</span><span class="tl-name"><a href="https://www.google.com/maps/search/Casa+Lucio+Madrid+Cava+Baja+35" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Casa Lucio</a></span></div>
+        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: La Latina (L5))</span> Cava Baja 35, La Latina. Madrid institution since 1974 — King Juan Carlos's regular table. Famous for huevos rotos (broken eggs over jamón and fries) and the roast lamb. Book for 9:30pm.</p>
       </div>
     </div>
 
@@ -839,7 +852,7 @@
 
     <div class="dist">↓ &nbsp;~20 min walk or taxi to Palacio Real</div>
     <div class="tl-item">
-      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-dot" style="background:#3B82F6"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">1:15 pm</span><span class="tag t-food">Lunch</span><span class="tl-name"><a href="https://www.google.com/maps/search/Juana+la+Loca+Madrid+Recoletos+10" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Juana la Loca</a></span><span style="color:#1baf7a;font-size:13px;margin-left:6px;font-weight:600;">✓</span></div>
         <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Colón (L4))</span> Recoletos 10, Salamanca. The tortilla de patatas — genuinely life-changing. Also: huevos rotos con trufa, foie pintxos. Booked 1:15pm for 4 · €80 deposit paid</p>
@@ -880,16 +893,16 @@
 
     <div class="dist">↓ &nbsp;~10 min walk to Chamberí</div>
     <div class="tl-item">
-      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-dot" style="background:#3B82F6"></div>
       <div class="tl-card">
-        <div class="tl-header"><span class="tl-time">6:00 pm</span><span class="tag t-drinks">Rooftop</span><span class="tl-name"><a href="https://www.google.com/maps/search/The+Hat+Rooftop+Madrid+Imperial+9" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">The Hat Rooftop</a></span></div>
+        <div class="tl-header"><span class="tl-time">6:30 pm</span><span class="tag t-drinks">Rooftop</span><span class="tl-name"><a href="https://www.google.com/maps/search/The+Hat+Rooftop+Madrid+Imperial+9" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">The Hat Rooftop</a></span></div>
         <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Ópera (L2/L5))</span> Imperial 9, near Plaza Mayor. Best-rated rooftop (4.7★) — chilled, unpretentious, great prices. Views toward the old city. Opens 1pm Sat.</p>
       </div>
     </div>
 
     <div class="dist">↓ &nbsp;already there · club starts at midnight</div>
     <div class="tl-item">
-      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-dot" style="background:#3B82F6"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">8:00 pm</span><span class="tag t-drinks">Rooftop</span><span class="tl-name"><a href="https://www.google.com/maps/search/Makaa+Rooftop+Madrid+Plaza+del+Carmen" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Makáa Rooftop — pre-dinner cocktails</a></span></div>
         <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Callao (L3/L5))</span> Plaza del Carmen 1. Rooftop restaurant with DJ and stunning city views. Great cocktails. Perfect bridge before your dinner booking.</p>
@@ -922,7 +935,7 @@
   <div class="timeline">
 
     <div class="tl-item">
-      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-dot" style="background:#3B82F6"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">9:00 am</span><span class="tag t-market">Market</span><span class="tl-name"><a href="https://www.google.com/maps/search/El+Rastro+Madrid+Ribera+de+Curtidores" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">El Rastro Flea Market</a></span></div>
         <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: La Latina (L5))</span> Ribera de Curtidores. Sunday only, 9am–3pm. Start at La Latina end, walk downhill. End at Cervecería La Paloma 85 (Calle Toledo 85) — gambas + cold beer. Closes 4pm.</p>
@@ -931,7 +944,7 @@
 
     <div class="dist">↓ &nbsp;~2 min walk · bottom of El Rastro</div>
     <div class="tl-item">
-      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-dot" style="background:#3B82F6"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">11:00 am</span><span class="tag t-drinks">Taberna</span><span class="tl-name"><a href="https://www.google.com/maps/search/Cerveceria+La+Paloma+85+Madrid+Calle+Toledo" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Cervecería La Paloma 85</a></span></div>
         <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: La Latina (L5))</span> Calle de Toledo 85. El Rastro ends right at your feet. Gambas a la plancha, free boquerones tapa with every beer. Standing bar, tin counter, cash only. ⚠️ Closes 4pm Sun — get in early.</p>
@@ -949,7 +962,7 @@
 
     <div class="dist">↓ &nbsp;~5 min walk · Gran Vía → Alcalá</div>
     <div class="tl-item">
-      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-dot" style="background:#3B82F6"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">3:00 pm</span><span class="tag t-walk">Afternoon</span><span class="tl-name">Sunday afternoon — pick one or do both</span></div>
         <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Sevilla (L2))</span>
@@ -983,7 +996,7 @@
 
     <div class="dist">↓ &nbsp;~10 min walk to Cibeles / James Joyce</div>
     <div class="tl-item">
-      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-dot" style="background:#3B82F6"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">7:30 pm</span><span class="tag t-drinks">Pre-match drinks</span><span class="tl-name">Pick your spot — near James Joyce</span></div>
         <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Antón Martín (L1))</span> Choose one — all within 5–10 min walk of James Joyce Irish Pub and Plaza de Cibeles:<br><br>
@@ -999,7 +1012,12 @@
       <div class="tl-dot" style="background:#1B6B3A"></div>
       <div class="tl-card wc-card">
         <div class="tl-header"><span class="tl-time">9:00 pm</span><span class="tag t-wc">⚽ World Cup Final</span><span class="tl-name">Kickoff — Madrid time (3pm ET)</span></div>
-        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Banco de España (L2))</span>         <strong>Best spots:</strong> Plaza de Cibeles (giant outdoor screen — where Spain celebrated 2010, free) · <a href="https://www.google.com/maps/search/James+Joyce+Irish+Pub+Madrid+Calle+Alcala" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;font-weight:600;">James Joyce Irish Pub</a>, Calle Alcalá — <strong>booked 7:30pm for 5 ✓</strong> · English commentary · Cervecería Deportiva, Calle las Veneras 7.</p>
+                <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Banco de España (L2))</span>
+        <strong>Watch options:</strong><br><br>
+        🟢 <strong><a href="https://www.google.com/maps/search/Plaza+de+Cibeles+Madrid" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Plaza de Cibeles</a></strong> — Giant outdoor screen, free. Where Spain celebrated 2010. Electric if Spain are in the final.<br><br>
+        🍺 <strong><a href="https://www.google.com/maps/search/Cerveceria+Deportiva+Madrid+Calle+las+Veneras+7" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Cervecería Deportiva</a></strong> — Calle las Veneras 7, near Callao. Dedicated sports bar, multiple big screens. Should be bookable.<br><br>
+        🍀 <strong><a href="https://www.google.com/maps/search/Finnegans+Irish+Pub+Madrid+Plaza+de+las+Salesas" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Finnegan's</a></strong> — Plaza de las Salesas 9. Well-run Irish pub, screens, English commentary. Bookable.<br><br>
+        🍀 <strong><a href="https://www.google.com/maps/search/La+Fontana+de+Oro+Madrid+Victoria+1" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">La Fontana de Oro</a></strong> — Victoria 1, near Sol. Historic bar, consistently shows major games, large space.</p>
       </div>
     </div>
 
@@ -1038,7 +1056,7 @@
 
     <div class="dist">↓ &nbsp;~15 min walk to Malasaña</div>
     <div class="tl-item">
-      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-dot" style="background:#3B82F6"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">10:30 am</span><span class="tag t-walk">Chamberí</span><span class="tl-name">Chamberí neighbourhood wander</span></div>
         <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Iglesia (L1))</span> Stroll Plaza de Olavide, window-shop around the barrio. One of Madrid's most authentically local squares — terraces, kids, dogs, zero tourists.</p>
@@ -1047,7 +1065,7 @@
 
     <div class="dist">↓ &nbsp;~12 min walk · Malasaña → Chamberí</div>
     <div class="tl-item">
-      <div class="tl-dot" style="background:#eda100"></div>
+      <div class="tl-dot" style="background:#3B82F6"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">12:00 pm</span><span class="tag t-drinks">Wine bar</span><span class="tl-name"><a href="https://www.google.com/maps/search/Casa+Luna+Madrid+Corredera+Baja+San+Pablo" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Casa Luna</a></span></div>
         <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Tribunal (L10))</span> Corredera Baja de San Pablo 4. Opens 11:30am. Charcuterie boards, cheese plates, excellent wine by the glass. Long lazy morning-into-lunch vibe.</p>
@@ -1072,36 +1090,6 @@
       </div>
     </div>
 
-    <div class="dist">↓ &nbsp;shared taxi ~20 min · €15–18 total</div>
-    <div class="tl-item">
-      <div class="tl-dot" style="background:#C60B1E"></div>
-      <div class="tl-card hotel-card">
-        <div class="tl-header"><span class="tl-time">4:30 pm</span><span class="tag t-hotel">🏨 Hotels</span><span class="tl-name">Regroup for Siete Tetas</span></div>
-        <p class="tl-note" style="margin-bottom:10px;">From El Retiro. Then share a taxi to Vallecas (~20 min from both hotels) — go together, it's out east.</p>
-        <div class="hotel-split">
-          <div class="hotel-group">
-            <div class="hotel-group-name">Stuart & Josianne</div>
-            <div class="hotel-group-hotel"><a href="https://www.google.com/maps/search/Catalonia+Plaza+Espana+Hotel+Gran+Via+70+Madrid" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;font-weight:600;">Catalonia Plaza España</a></div>
-            <div class="hotel-group-route">Retiro (L9) → Nuevos Ministerios → Plaza de España · ~18 min · or taxi ~€11</div>
-            <div><a href="https://upload.wikimedia.org/wikipedia/commons/7/7f/Madrid_metro_map.png" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;align-items:center;gap:4px;background:#A05AA0;padding:2px 8px 2px 3px;border-radius:20px;color:#fff;font-size:10px;font-weight:600;margin-top:5px;margin-right:3px;"><span style="display:inline-block;width:14px;height:14px;border-radius:50%;background:#8A3F8A;font-size:8px;font-weight:700;text-align:center;line-height:14px;color:#fff;flex-shrink:0;">L9</span> Retiro</a><a href="https://upload.wikimedia.org/wikipedia/commons/7/7f/Madrid_metro_map.png" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;align-items:center;gap:4px;background:#0073CE;padding:2px 8px 2px 3px;border-radius:20px;color:#fff;font-size:10px;font-weight:600;margin-top:5px;margin-right:3px;"><span style="display:inline-block;width:14px;height:14px;border-radius:50%;background:#005BAA;font-size:8px;font-weight:700;text-align:center;line-height:14px;color:#fff;flex-shrink:0;">L10</span> Plaza de España</a></div>
-          </div>
-          <div class="hotel-group">
-            <div class="hotel-group-name">Steve & Parin</div>
-            <div class="hotel-group-hotel"><a href="https://www.google.com/maps/search/JW+Marriott+Hotel+Madrid+Calle+Sevilla+2" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;font-weight:600;">JW Marriott</a></div>
-            <div class="hotel-group-route">Retiro (L9) → Banco de España · ~8 min · or taxi ~€8</div>
-            <div><a href="https://upload.wikimedia.org/wikipedia/commons/7/7f/Madrid_metro_map.png" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;align-items:center;gap:4px;background:#A05AA0;padding:2px 8px 2px 3px;border-radius:20px;color:#fff;font-size:10px;font-weight:600;margin-top:5px;margin-right:3px;"><span style="display:inline-block;width:14px;height:14px;border-radius:50%;background:#8A3F8A;font-size:8px;font-weight:700;text-align:center;line-height:14px;color:#fff;flex-shrink:0;">L9</span> Retiro</a><a href="https://upload.wikimedia.org/wikipedia/commons/7/7f/Madrid_metro_map.png" target="_blank" rel="noopener" style="text-decoration:none;display:inline-flex;align-items:center;gap:4px;background:#E83731;padding:2px 8px 2px 3px;border-radius:20px;color:#fff;font-size:10px;font-weight:600;margin-top:5px;margin-right:3px;"><span style="display:inline-block;width:14px;height:14px;border-radius:50%;background:#C5282C;font-size:8px;font-weight:700;text-align:center;line-height:14px;color:#fff;flex-shrink:0;">L2</span> Banco de España</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-dot" style="background:#1baf7a"></div>
-      <div class="tl-card">
-        <div class="tl-header"><span class="tl-time">5:30 pm</span><span class="tag t-relax">Viewpoint</span><span class="tl-name"><a href="https://www.google.com/maps/search/Parque+de+las+Siete+Tetas+Madrid+Vallecas" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Parque de las Siete Tetas — final sunset</a></span></div>
-        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Portazgo (L1))</span> Shared taxi from both hotels (~20 min, ~€15–18). 360° panoramic views of all Madrid. Locals bring wine and sit on the hill. The best possible way to end the trip. Free.</p>
-      </div>
-    </div>
 
   </div>
 </div>
@@ -1202,44 +1190,44 @@ window.addEventListener('load', function() {
     // ── THU ──
     { lat:40.4213, lng:-3.7033, color:'#1baf7a', label:'<b>Toma Café</b><br>Thu 9am · C. de la Palma 18' },
     { lat:40.4248, lng:-3.6960, color:'#1baf7a', label:'<b>Malasaña & Chueca wander</b><br>Thu 10:30am · Carapazona + In-Verso Libros' },
-    { lat:40.4199, lng:-3.6969, color:'#eda100', label:'<b>Bocado</b><br>Thu lunch · Santa Teresa 1' },
+    { lat:40.4199, lng:-3.6969, color:'#3B82F6', label:'<b>Bocado</b><br>Thu lunch · Santa Teresa 1' },
     { lat:40.4155, lng:-3.6975, color:'#1baf7a', label:'<b>Calle de las Huertas</b><br>Thu 3pm · literary stroll' },
     { lat:40.4079, lng:-3.6946, color:'#4a3aa7', label:'<b>Museo Reina Sofía</b><br>Thu 6:30pm · free 7–9pm · closed Tue' },
-    { lat:40.4196, lng:-3.7022, color:'#eda100', label:'<b>Le Tavernier</b><br>Thu 7pm · walk-in only · Floor 8' },
-    { lat:40.4215, lng:-3.6880, color:'#eda100', label:'<b>Quispe Madrid</b><br>Thu 8:30pm · booked · Salón de fondo' },
+    { lat:40.4196, lng:-3.7022, color:'#3B82F6', label:'<b>Le Tavernier</b><br>Thu 7pm · walk-in only · Floor 8' },
+    { lat:40.4215, lng:-3.6880, color:'#3B82F6', label:'<b>Quispe Madrid</b><br>Thu 8:30pm · booked · Salón de fondo' },
     { lat:40.4237, lng:-3.6950, color:'#4a3aa7', label:'<b>Ficus Bar</b><br>Thu nightcap · Santo Tomé 8' },
 
     // ── FRI ──
     { lat:40.4207, lng:-3.6982, color:'#1baf7a', label:'<b>Bucólico Café</b><br>Fri 9am · Barbieri 4' },
     { lat:40.4138, lng:-3.6921, color:'#4a3aa7', label:'<b>Museo del Prado</b><br>Fri 11am · booked · 5 tickets' },
-    { lat:40.4074, lng:-3.7008, color:'#eda100', label:'<b>La Falda</b><br>Fri lunch · Miguel Servet 4 · kitchen closes 3:45pm' },
+    { lat:40.4074, lng:-3.7008, color:'#3B82F6', label:'<b>La Falda</b><br>Fri lunch · Miguel Servet 4 · kitchen closes 3:45pm' },
     { lat:40.4084, lng:-3.7046, color:'#534AB7', label:'<b>Chimpancé Mural</b><br>Fri · Okuda + Bordalo II · Embajadores 33' },
     { lat:40.4073, lng:-3.6985, color:'#534AB7', label:'<b>Esta es una Plaza</b><br>Fri · community garden · Dr. Fourquet 24' },
     { lat:40.4060, lng:-3.6999, color:'#4a3aa7', label:'<b>La Casa Encendida</b><br>Fri · free contemporary art · Ronda de Valencia 2' },
-    { lat:40.4141, lng:-3.7080, color:'#eda100', label:'<b>Cervecería La Paloma 85</b><br>Fri & Sun aperitivo · Calle Toledo 85' },
-    { lat:40.4141, lng:-3.7080, color:'#eda100', label:'<b>Casa Lucio</b><br>Fri dinner · Cava Baja 35' },
+    { lat:40.4141, lng:-3.7080, color:'#3B82F6', label:'<b>Cervecería La Paloma 85</b><br>Fri & Sun aperitivo · Calle Toledo 85' },
+    { lat:40.4141, lng:-3.7080, color:'#3B82F6', label:'<b>Casa Lucio</b><br>Fri dinner · Cava Baja 35' },
     { lat:40.4149, lng:-3.6995, color:'#4a3aa7', label:'<b>Salmón Gurú</b><br>Fri nightcap · Echegaray 21' },
     { lat:40.4216, lng:-3.6898, color:'#4a3aa7', label:'<b>Harrison 1933</b><br>Fri 1am · Recoletos 16' },
 
     // ── SAT ──
     { lat:40.4342, lng:-3.7007, color:'#1baf7a', label:'<b>Alma Nomad Bakery</b><br>Sat 9:30am · Santa Feliciana 10' },
     { lat:40.4153, lng:-3.6835, color:'#1baf7a', label:'<b>El Retiro Park</b><br>Sat 11am · peacock garden · rowboats · Crystal Palace' },
-    { lat:40.4217, lng:-3.6903, color:'#eda100', label:'<b>Juana la Loca</b><br>Sat 1:15pm · booked for 4 · €80 deposit' },
+    { lat:40.4217, lng:-3.6903, color:'#3B82F6', label:'<b>Juana la Loca</b><br>Sat 1:15pm · booked for 4 · €80 deposit' },
     { lat:40.4203, lng:-3.7140, color:'#1baf7a', label:'<b>Sabatini Gardens</b><br>Sat 4pm · behind Royal Palace' },
     { lat:40.4183, lng:-3.7173, color:'#1baf7a', label:'<b>Campo del Moro</b><br>Sat · hidden royal gardens · swans' },
-    { lat:40.4143, lng:-3.7010, color:'#eda100', label:'<b>The Hat Rooftop</b><br>Sat 6pm · Imperial 9' },
-    { lat:40.4188, lng:-3.7028, color:'#eda100', label:'<b>Makáa Rooftop</b><br>Sat 8pm · pre-dinner cocktails · Plaza del Carmen' },
+    { lat:40.4143, lng:-3.7010, color:'#3B82F6', label:'<b>The Hat Rooftop</b><br>Sat 6pm · Imperial 9' },
+    { lat:40.4188, lng:-3.7028, color:'#3B82F6', label:'<b>Makáa Rooftop</b><br>Sat 8pm · pre-dinner cocktails · Plaza del Carmen' },
     { lat:40.4383, lng:-3.6995, color:'#4a3aa7', label:'<b>61.Sixtyone</b><br>Sat 9:30pm · booked · José Abascal 61' },
 
     // ── SUN ──
     { lat:40.4070, lng:-3.7073, color:'#C60B1E', label:'<b>El Rastro</b><br>Sun 9am · Ribera de Curtidores · Sun only 9am–3pm' },
     { lat:40.4253, lng:-3.7048, color:'#1baf7a', label:'<b>Casa Salesas</b><br>Sun brunch · Fernando VI 6' },
-    { lat:40.4195, lng:-3.7020, color:'#eda100', label:'<b>Brach Madrid</b><br>Sun 1pm · booked for 5' },
+    { lat:40.4195, lng:-3.7020, color:'#3B82F6', label:'<b>Brach Madrid</b><br>Sun 1pm · booked for 5' },
     { lat:40.4153, lng:-3.6835, color:'#1baf7a', label:'<b>Palacio de Cristal / Retiro</b><br>Sun afternoon stroll' },
-    { lat:40.4190, lng:-3.6943, color:'#eda100', label:'<b>⭐ Cervecería Alemana</b><br>Sun pre-match · Plaza de Santa Ana 6 · recommended' },
-    { lat:40.4218, lng:-3.6923, color:'#eda100', label:'<b>El Pabellón</b><br>Sun pre-match option · Paseo de Recoletos 18' },
-    { lat:40.4198, lng:-3.7142, color:'#eda100', label:'<b>El Anciano Rey de los Vinos</b><br>Sun pre-match option · Calle Bailén 19' },
-    { lat:40.4155, lng:-3.6975, color:'#eda100', label:'<b>Taberna La Dolores</b><br>Sun pre-match option · Plaza de Jesús 4' },
+    { lat:40.4190, lng:-3.6943, color:'#3B82F6', label:'<b>⭐ Cervecería Alemana</b><br>Sun pre-match · Plaza de Santa Ana 6 · recommended' },
+    { lat:40.4218, lng:-3.6923, color:'#3B82F6', label:'<b>El Pabellón</b><br>Sun pre-match option · Paseo de Recoletos 18' },
+    { lat:40.4198, lng:-3.7142, color:'#3B82F6', label:'<b>El Anciano Rey de los Vinos</b><br>Sun pre-match option · Calle Bailén 19' },
+    { lat:40.4155, lng:-3.6975, color:'#3B82F6', label:'<b>Taberna La Dolores</b><br>Sun pre-match option · Plaza de Jesús 4' },
     { lat:40.4198, lng:-3.6894, color:'#1B6B3A', label:'<b>⚽ James Joyce Irish Pub</b><br>Sun 7:30pm · booked for 5 · World Cup Final 9pm' },
     { lat:40.4198, lng:-3.6894, color:'#1B6B3A', label:'<b>⚽ Plaza de Cibeles</b><br>World Cup Final outdoor screen · free' },
     { lat:40.4199, lng:-3.6969, color:'#4a3aa7', label:'<b>Ponja Nikkei</b><br>Sun after match · Santa Teresa 16' },
@@ -1247,8 +1235,8 @@ window.addEventListener('load', function() {
     // ── MON ──
     { lat:40.4342, lng:-3.7007, color:'#1baf7a', label:'<b>La Casa Amande</b><br>Mon 9am · Plaza de Olavide' },
     { lat:40.4342, lng:-3.7007, color:'#1baf7a', label:'<b>Alma Nomad Bakery</b><br>Mon 10:30am · Santa Feliciana 10' },
-    { lat:40.4218, lng:-3.7045, color:'#eda100', label:'<b>Casa Luna</b><br>Mon noon · Corredera Baja de San Pablo 4' },
-    { lat:40.4361, lng:-3.7008, color:'#eda100', label:'<b>Ponzano Street</b><br>Mon 1:30pm · tapas crawl · no booking needed' },
+    { lat:40.4218, lng:-3.7045, color:'#3B82F6', label:'<b>Casa Luna</b><br>Mon noon · Corredera Baja de San Pablo 4' },
+    { lat:40.4361, lng:-3.7008, color:'#3B82F6', label:'<b>Ponzano Street</b><br>Mon 1:30pm · tapas crawl · no booking needed' },
     { lat:40.4153, lng:-3.6835, color:'#1baf7a', label:'<b>El Retiro — final stroll</b><br>Mon 4pm · Florida Park + Crystal Palace' },
     { lat:40.3985, lng:-3.6558, color:'#1baf7a', label:'<b>Parque de las Siete Tetas</b><br>Mon sunset · Vallecas · shared taxi ~€15–18' },
 
