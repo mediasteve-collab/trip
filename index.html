@@ -298,7 +298,7 @@
     width: 1px;
     background: var(--border);
   }
-  .tl-item { position: relative; margin-bottom: 2px; }
+  .tl-item { position: relative; margin-bottom: 10px; }
 
   .dist {
     display: flex;
@@ -358,6 +358,7 @@
     color: var(--navy);
     line-height: 1.3;
   }
+  .booked-text { color: #DC2626; font-weight: 600; }
   .tl-note {
     font-size: 13px;
     color: var(--muted);
@@ -528,59 +529,42 @@
     </a>
     <div class="map-grid">
       <div class="map-frame" id="leaflet-map" style="height:420px;"></div>
-      <div class="map-legend">
+      <div class="map-legend" style="display:flex;flex-direction:column;gap:14px;">
+
         <div class="map-legend-section">
           <div class="map-legend-title">Hotels</div>
-          <div class="map-pin">
-            <div class="pin-dot" style="background:#2a78d6"></div>
-            <div class="pin-text"><strong><a href="https://www.google.com/maps/search/Catalonia+Plaza+Espana+Hotel+Gran+Via+70+Madrid" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Catalonia Plaza España</a></strong> Stuart & Josianne · Gran Vía 70</div>
-          </div>
-          <div class="map-pin">
-            <div class="pin-dot" style="background:#D85A30"></div>
-            <div class="pin-text"><strong><a href="https://www.google.com/maps/search/JW+Marriott+Hotel+Madrid+Calle+Sevilla+2" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">JW Marriott</a></strong> Steve & Parin · Calle Sevilla 2</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px 16px;">
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#fff;"><div style="width:8px;height:8px;border-radius:50%;background:#2a78d6;flex-shrink:0;"></div><a href="https://www.google.com/maps/search/Catalonia+Plaza+Espana+Hotel+Gran+Via+70+Madrid" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;font-weight:600;">Catalonia Plaza España</a><span style="color:rgba(255,255,255,0.5);font-size:11px;">Stuart & Josianne</span></div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#fff;"><div style="width:8px;height:8px;border-radius:50%;background:#D85A30;flex-shrink:0;"></div><a href="https://www.google.com/maps/search/JW+Marriott+Hotel+Madrid+Calle+Sevilla+2" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;font-weight:600;">JW Marriott</a><span style="color:rgba(255,255,255,0.5);font-size:11px;">Steve & Parin</span></div>
           </div>
         </div>
+
         <div class="map-legend-section">
           <div class="map-legend-title">Museums</div>
-          <div class="map-pin">
-            <div class="pin-dot" style="background:#4a3aa7"></div>
-            <div class="pin-text"><strong><a href="https://www.google.com/maps/search/Museo+del+Prado+Madrid" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Museo del Prado</a></strong> Pre-book · Free 6–8pm Mon–Sat</div>
-          </div>
-          <div class="map-pin">
-            <div class="pin-dot" style="background:#4a3aa7"></div>
-            <div class="pin-text"><strong><a href="https://www.google.com/maps/search/Museo+Reina+Sofia+Madrid" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Museo Reina Sofía</a></strong> Guernica · Free 7–9pm</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px 16px;">
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#fff;"><div style="width:8px;height:8px;border-radius:50%;background:#4a3aa7;flex-shrink:0;"></div><a href="https://www.google.com/maps/search/Museo+del+Prado+Madrid" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;font-weight:600;">Museo del Prado</a><span style="color:rgba(255,255,255,0.5);font-size:11px;">Free 6–8pm Mon–Sat</span></div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#fff;"><div style="width:8px;height:8px;border-radius:50%;background:#4a3aa7;flex-shrink:0;"></div><a href="https://www.google.com/maps/search/Museo+Reina+Sofia+Madrid" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;font-weight:600;">Museo Reina Sofía</a><span style="color:rgba(255,255,255,0.5);font-size:11px;">Free 7–9pm</span></div>
           </div>
         </div>
+
         <div class="map-legend-section">
           <div class="map-legend-title">Parks & Landmarks</div>
-          <div class="map-pin">
-            <div class="pin-dot" style="background:#1baf7a"></div>
-            <div class="pin-text"><strong><a href="https://www.google.com/maps/search/El+Retiro+Park+Madrid" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">El Retiro</a></strong> Peacock garden · rowboats · Crystal Palace</div>
-          </div>
-          <div class="map-pin">
-            <div class="pin-dot" style="background:#1baf7a"></div>
-            <div class="pin-text"><strong><a href="https://www.google.com/maps/search/Jardines+de+Sabatini+Madrid" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Sabatini + Campo del Moro</a></strong> Royal Palace gardens</div>
-          </div>
-          <div class="map-pin">
-            <div class="pin-dot" style="background:#1baf7a"></div>
-            <div class="pin-text"><strong><a href="https://www.google.com/maps/search/Plaza+Mayor+Madrid" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Plaza Mayor</a></strong> Evening stroll · San Miguel market</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px 16px;">
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#fff;"><div style="width:8px;height:8px;border-radius:50%;background:#1baf7a;flex-shrink:0;"></div><a href="https://www.google.com/maps/search/El+Retiro+Park+Madrid" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;font-weight:600;">El Retiro</a></div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#fff;"><div style="width:8px;height:8px;border-radius:50%;background:#1baf7a;flex-shrink:0;"></div><a href="https://www.google.com/maps/search/Jardines+de+Sabatini+Madrid" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;font-weight:600;">Sabatini + Campo del Moro</a></div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#fff;"><div style="width:8px;height:8px;border-radius:50%;background:#1baf7a;flex-shrink:0;"></div><a href="https://www.google.com/maps/search/Plaza+Mayor+Madrid" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;font-weight:600;">Plaza Mayor</a></div>
           </div>
         </div>
+
         <div class="map-legend-section">
           <div class="map-legend-title">Neighbourhoods</div>
-          <div class="map-pin">
-            <div class="pin-dot" style="background:#3B82F6"></div>
-            <div class="pin-text"><strong><a href="https://www.google.com/maps/search/Malasana+Madrid" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Malasaña / Chueca</a></strong> Bakeries · bars · shopping</div>
-          </div>
-          <div class="map-pin">
-            <div class="pin-dot" style="background:#3B82F6"></div>
-            <div class="pin-text"><strong><a href="https://www.google.com/maps/search/La+Latina+Madrid" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">La Latina / Lavapiés</a></strong> Street art · tabernas · El Rastro</div>
-          </div>
-          <div class="map-pin">
-            <div class="pin-dot" style="background:#3B82F6"></div>
-            <div class="pin-text"><strong><a href="https://www.google.com/maps/search/Chamberi+Madrid" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Chamberí</a></strong> Alma Nomad · El Doble · Casa Benigna</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px 16px;">
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#fff;"><div style="width:8px;height:8px;border-radius:50%;background:#3B82F6;flex-shrink:0;"></div><a href="https://www.google.com/maps/search/Malasana+Madrid" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;font-weight:600;">Malasaña / Chueca</a></div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#fff;"><div style="width:8px;height:8px;border-radius:50%;background:#3B82F6;flex-shrink:0;"></div><a href="https://www.google.com/maps/search/La+Latina+Madrid" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;font-weight:600;">La Latina / Lavapiés</a></div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#fff;"><div style="width:8px;height:8px;border-radius:50%;background:#3B82F6;flex-shrink:0;"></div><a href="https://www.google.com/maps/search/Chamberi+Madrid" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;font-weight:600;">Chamberí</a></div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -676,7 +660,7 @@
       <div class="tl-dot" style="background:#1baf7a"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">8:30 pm</span><span class="tag t-food">Dinner</span><span class="tl-name"><a href="https://www.google.com/maps/search/Quispe+Madrid+Conde+de+Aranda+4" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Quispe Madrid — Salón de fondo</a></span><span style="color:#1baf7a;font-size:13px;margin-left:6px;font-weight:600;">✓</span></div>
-        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Serrano (L4))</span> Conde de Aranda 4, Salamanca. Best Peruvian in Madrid — ceviche, tiradito, pisco sours. 4.8★. Booked 8:30pm for 5 · Salón de fondo</p>
+        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Serrano (L4))</span> Conde de Aranda 4, Salamanca. Best Peruvian in Madrid — ceviche, tiradito, pisco sours. 4.8★. <span class="booked-text">Booked 8:30pm for 5 · Salón de fondo</span></p>
       </div>
     </div>
 
@@ -727,7 +711,7 @@
       <div class="tl-dot" style="background:#3B82F6"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">2:00 pm</span><span class="tag t-food">Lunch</span><span class="tl-name"><a href="https://www.google.com/maps/search/La+Falda+Madrid+Miguel+Servet+4" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">La Falda</a></span><span style="color:#1baf7a;font-size:13px;margin-left:6px;font-weight:600;">✓</span></div>
-        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Lavapiés (L3))</span> Miguel Servet 4, Lavapiés. Galicia-style Betanzos tortilla — runny and creamy, unlike anything you'll find elsewhere. Booked 2pm for 5 ✓ · Kitchen closes 3:45pm.</p>
+        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Lavapiés (L3))</span> Miguel Servet 4, Lavapiés. Galicia-style Betanzos tortilla — runny and creamy, unlike anything you'll find elsewhere. <span class="booked-text">Booked 2pm for 5 ✓</span> · Kitchen closes 3:45pm.</p>
       </div>
     </div>
 
@@ -855,7 +839,7 @@
       <div class="tl-dot" style="background:#3B82F6"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">1:15 pm</span><span class="tag t-food">Lunch</span><span class="tl-name"><a href="https://www.google.com/maps/search/Juana+la+Loca+Madrid+Recoletos+10" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Juana la Loca</a></span><span style="color:#1baf7a;font-size:13px;margin-left:6px;font-weight:600;">✓</span></div>
-        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Colón (L4))</span> Recoletos 10, Salamanca. The tortilla de patatas — genuinely life-changing. Also: huevos rotos con trufa, foie pintxos. Booked 1:15pm for 4 · €80 deposit paid</p>
+        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Colón (L4))</span> Recoletos 10, Salamanca. The tortilla de patatas — genuinely life-changing. Also: huevos rotos con trufa, foie pintxos. <span class="booked-text">Booked 1:15pm for 4 · €80 deposit paid</span></p>
       </div>
     </div>
 
@@ -913,7 +897,7 @@
       <div class="tl-dot" style="background:#4a3aa7"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">9:30 pm</span><span class="tag t-night">Dinner · Booked</span><span class="tl-name"><a href="https://www.google.com/maps/search/61+Sixtyone+Madrid+Jose+Abascal+61" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">61.Sixtyone</a></span><span style="color:#1baf7a;font-size:13px;margin-left:6px;font-weight:600;">✓</span></div>
-        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Gregorio Marañón (L7/L10))</span> José Abascal 61, Chamberí. Booked 9:30pm for 5 · €250 deposit paid ✓ · Tacos are the highlight. Turns into a full club at midnight with DJ — Sat until 5:30am.</p>
+        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Gregorio Marañón (L7/L10))</span> José Abascal 61, Chamberí. <span class="booked-text">Booked 9:30pm for 5 · €250 deposit paid ✓</span> · Tacos are the highlight. Turns into a full club at midnight with DJ — Sat until 5:30am.</p>
       </div>
     </div>
 
@@ -956,7 +940,7 @@
       <div class="tl-dot" style="background:#1baf7a"></div>
       <div class="tl-card">
         <div class="tl-header"><span class="tl-time">1:00 pm</span><span class="tag t-food">Lunch</span><span class="tl-name"><a href="https://www.google.com/maps/search/Brach+Madrid+Gran+Via" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Brach Madrid Restaurante</a></span><span style="color:#1baf7a;font-size:13px;margin-left:6px;font-weight:600;">✓</span></div>
-        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Gran Vía (L1/L5))</span> Philippe Starck-designed Mediterranean brasserie. Serious see-and-be-seen energy, great cocktail bar. Booked 1pm for 5</p>
+        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Gran Vía (L1/L5))</span> Philippe Starck-designed Mediterranean brasserie. Serious see-and-be-seen energy, great cocktail bar. <span class="booked-text">Booked 1pm for 5</span></p>
       </div>
     </div>
 
@@ -1022,10 +1006,13 @@
     </div>
 
     <div class="tl-item">
-      <div class="tl-dot" style="background:#4a3aa7"></div>
+      <div class="tl-dot" style="background:#eda100"></div>
       <div class="tl-card">
-        <div class="tl-header"><span class="tl-time">~11:30 pm</span><span class="tag t-night">Night</span><span class="tl-name"><a href="https://www.google.com/maps/search/Ponja+Nikkei+Madrid+Santa+Teresa+16" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">After — Ponja Nikkei or Cibeles</a></span></div>
-        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Antón Martín (L1))</span> If Spain win → Plaza de Cibeles. The whole city comes out. Otherwise, Ponja Nikkei (Santa Teresa 16) open Sun until 11pm — Japanese-Peruvian, great sake.</p>
+        <div class="tl-header"><span class="tl-time">~11:30 pm</span><span class="tag t-drinks">After the match</span><span class="tl-name">Stay near the square — pintxos & drinks</span></div>
+        <p class="tl-note"><span style="color:#9CA3AF;font-size:11px;font-weight:500;">(Closest Metro: Banco de España (L2))</span> Skip the sit-down — stay in the energy of the square. Best options nearby:<br><br>
+        🥂 <strong><a href="https://www.google.com/maps/search/Azotea+Cibeles+Madrid+Palacio+de+Cibeles" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Azotea Cibeles</a></strong> — rooftop bar on top of Cibeles Palace itself. Cocktails and tapas with views of the square. Book ahead or walk up if space.<br><br>
+        🍢 <strong><a href="https://www.google.com/maps/search/El+Txoko+de+SAGARDI+Madrid+Euskal+Etxea" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">El Txoko de SAGARDI</a></strong> — authentic Basque pintxos bar, donostiarra style, txakoli wine. One of the best pintxos in central Madrid.<br><br>
+        🍢 <strong><a href="https://www.google.com/maps/search/Txirimiri+Madrid+Amor+de+Dios+12" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Txirimiri</a></strong> — Calle del Amor de Dios 12, Barrio de las Letras. Consistently rated best pintxos in Madrid, 10 min walk from Cibeles.</p>
       </div>
     </div>
 
