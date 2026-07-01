@@ -476,6 +476,14 @@
     color: rgba(255,255,255,0.3);
   }
   footer span { color: var(--gold); }
+
+  /* ── STARRED PICKS ── */
+  .sub-starred {
+    background: rgba(245,158,11,0.08);
+    border-left: 2px solid rgba(245,158,11,0.5);
+    padding-left: 6px;
+    border-radius: 0 6px 6px 0;
+  }
 </style>
 </head>
 <body>
@@ -1528,6 +1536,12 @@ window.addEventListener('load', function() {
 
   window.addEventListener('scroll', updateNav, { passive: true });
   updateNav();
+</script>
+
+<script>
+  document.querySelectorAll('.tl-card > p').forEach(p => {
+    if (p.textContent.includes('⭐')) p.classList.add('sub-starred');
+  });
 </script>
 
 </body>
