@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Madrid · July 16–20, 2026</name>
+  <description>Stuart &amp; Josianne · Steve &amp; Parin</description>
+
+  <!-- ── STYLES ── -->
+  <Style id="hotel">
+    <IconStyle><scale>1.2</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon></IconStyle>
+    <LabelStyle><scale>0.9</scale></LabelStyle>
+  </Style>
+  <Style id="thu">
+    <IconStyle><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/orange-circle.png</href></Icon></IconStyle>
+    <LabelStyle><scale>0.8</scale></LabelStyle>
+  </Style>
+  <Style id="fri">
+    <IconStyle><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/blu-circle.png</href></Icon></IconStyle>
+    <LabelStyle><scale>0.8</scale></LabelStyle>
+  </Style>
+  <Style id="sat">
+    <IconStyle><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon></IconStyle>
+    <LabelStyle><scale>0.8</scale></LabelStyle>
+  </Style>
+  <Style id="sun">
+    <IconStyle><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/purple-circle.png</href></Icon></IconStyle>
+    <LabelStyle><scale>0.8</scale></LabelStyle>
+  </Style>
+  <Style id="mon">
+    <IconStyle><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle.png</href></Icon></IconStyle>
+    <LabelStyle><scale>0.8</scale></LabelStyle>
+  </Style>
+  <Style id="bodega">
+    <IconStyle><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/pink-circle.png</href></Icon></IconStyle>
+    <LabelStyle><scale>0.8</scale></LabelStyle>
+  </Style>
+  <Style id="landmark">
+    <IconStyle><scale>1.0</scale><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href></Icon></IconStyle>
+    <LabelStyle><scale>0.8</scale></LabelStyle>
+  </Style>
+
+  <!-- ── HOTELS ── -->
+  <Folder>
+    <name>🏨 Hotels</name>
+    <Placemark>
+      <name>Catalonia Plaza España (Stuart &amp; Josianne)</name>
+      <description>Gran Vía 70</description>
+      <styleUrl>#hotel</styleUrl>
+      <Point><coordinates>-3.7115,40.4203,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>JW Marriott (Steve &amp; Parin)</name>
+      <description>Calle de Sevilla 2</description>
+      <styleUrl>#hotel</styleUrl>
+      <Point><coordinates>-3.7001,40.4168,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+
+  <!-- ── THURSDAY Jul 16 ── -->
+  <Folder>
+    <name>🟠 Thursday · Jul 16</name>
+    <Placemark>
+      <name>Toma Café</name>
+      <description>C. de la Palma 18 · 9am · specialty coffee</description>
+      <styleUrl>#thu</styleUrl>
+      <Point><coordinates>-3.7033,40.4213,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Malasaña &amp; Chueca wander</name>
+      <description>10:30am · Carapazona bookshop · In-Verso Libros · Stuart &amp; Josianne join ~11am</description>
+      <styleUrl>#thu</styleUrl>
+      <Point><coordinates>-3.6960,40.4248,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Bocado (Thu lunch)</name>
+      <description>Santa Teresa 1 · Justicia · 1pm lunch</description>
+      <styleUrl>#thu</styleUrl>
+      <Point><coordinates>-3.6969,40.4199,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Calle de las Huertas stroll</name>
+      <description>Thu 3pm · literary street · bookshops &amp; bars</description>
+      <styleUrl>#thu</styleUrl>
+      <Point><coordinates>-3.6975,40.4155,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Museo Reina Sofía</name>
+      <description>Thu 6:30pm · free entry 7–9pm · closed Tuesdays · Guernica here</description>
+      <styleUrl>#thu</styleUrl>
+      <Point><coordinates>-3.6946,40.4079,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Le Tavernier rooftop</name>
+      <description>Mesonero Romanos 13 · Thu 7pm · walk-in only · go early</description>
+      <styleUrl>#thu</styleUrl>
+      <Point><coordinates>-3.7022,40.4196,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Quispe Madrid ✓ BOOKED</name>
+      <description>Calle del Conde de Aranda 4 · Thu 8:30pm · Salón de fondo · booked</description>
+      <styleUrl>#thu</styleUrl>
+      <Point><coordinates>-3.6880,40.4215,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Honest Greens (vegan option near Quispe)</name>
+      <description>Jorge Juan 38 · Salamanca · plant-forward Mediterranean · 5 min from Quispe</description>
+      <styleUrl>#thu</styleUrl>
+      <Point><coordinates>-3.6832,40.4276,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Ficus Bar (Thu nightcap)</name>
+      <description>Santo Tomé 8 · Chueca · 11pm nightcap</description>
+      <styleUrl>#thu</styleUrl>
+      <Point><coordinates>-3.6950,40.4237,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Intruso Bar</name>
+      <description>Augusto Figueroa 3 · Chueca · Thu nightcap option</description>
+      <styleUrl>#thu</styleUrl>
+      <Point><coordinates>-3.6952,40.4240,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>GOTA Bar</name>
+      <description>Santa Teresa 1 · Justicia · Thu nightcap option</description>
+      <styleUrl>#thu</styleUrl>
+      <Point><coordinates>-3.6962,40.4252,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Planta Baja Cocktail Bar</name>
+      <description>Marqués del Duero 8 · Salamanca · Thu nightcap option</description>
+      <styleUrl>#thu</styleUrl>
+      <Point><coordinates>-3.6790,40.4282,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Shift Public House</name>
+      <description>Cardenal Cisneros 11 · Chamberí · Thu nightcap option</description>
+      <styleUrl>#thu</styleUrl>
+      <Point><coordinates>-3.6990,40.4310,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+
+  <!-- ── FRIDAY Jul 17 ── -->
+  <Folder>
+    <name>🔵 Friday · Jul 17</name>
+    <Placemark>
+      <name>Breakfast near the Prado</name>
+      <description>Fri 9am · Murillo Café / Plenti / ACID / El Patio Vertical</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.6925,40.4124,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Museo del Prado ✓ BOOKED</name>
+      <description>Fri 11am · 5 tickets booked</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.6921,40.4138,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>La Falda ✓ BOOKED</name>
+      <description>Miguel Servet 4 · Fri 2pm booked · kitchen closes 3:45pm</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.7008,40.4074,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Chimpancé Mural (Okuda + Bordalo II)</name>
+      <description>Embajadores 33 · street art · worth a detour</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.7046,40.4084,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Esta es una Plaza</name>
+      <description>Dr. Fourquet 24 · community garden</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.6985,40.4073,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>La Casa Encendida</name>
+      <description>Ronda de Valencia 2 · free contemporary art</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.6999,40.4060,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Cervecería La Paloma 85</name>
+      <description>Calle Toledo 85 · aperitivo stop Fri &amp; Sun</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.7080,40.4141,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>La Latina &amp; Plaza Mayor stroll</name>
+      <description>Fri 6:30pm · Puerta del Sol → Plaza Mayor → La Latina walk</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.7074,40.4155,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Parque de las Siete Tetas (Fri sunset)</name>
+      <description>Fri 7:30pm · Vallecas · best sunset viewpoint in Madrid</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.6558,40.3985,0</coordinates></Point>
+    </Placemark>
+    <!-- Cava Baja crawl -->
+    <Placemark>
+      <name>Casa Revuelta ⭐ (start here)</name>
+      <description>Latoneros 3 · La Latina · legendary bacalao fritters since the 1930s</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.7082,40.4137,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Casa Lucas</name>
+      <description>Cava Baja 30 · creative tapas &amp; serious wine list</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.7093,40.4127,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Taberna Tempranillo</name>
+      <description>Cava Baja 38 · huge wine-by-the-glass list</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.7096,40.4131,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>La Txakolina</name>
+      <description>Cava Baja 26 · Basque pintxos · famous runny tortilla</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.7090,40.4125,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Lamiak</name>
+      <description>Cava Baja 42 · relaxed Basque pintxos &amp; wine</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.7097,40.4133,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Almendro 13</name>
+      <description>Calle del Almendro 13 · huevos rotos &amp; manzanilla</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.7082,40.4125,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Txirimiri</name>
+      <description>Humilladero 6 · top-rated gourmet pintxos &amp; croquetas</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.7084,40.4128,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Cornucopia (vegan option)</name>
+      <description>Calle de la Flora 11 · near Sol · long-standing vegan buffet</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.7048,40.4182,0</coordinates></Point>
+    </Placemark>
+    <!-- Fri late night -->
+    <Placemark>
+      <name>Harrison 1933</name>
+      <description>C. de Recoletos 16 · Salamanca · speakeasy · jazz → disco · until 5am</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.6898,40.4216,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Café Central</name>
+      <description>Plaza del Ángel 10 · Barrio Letras · UNESCO-listed jazz club · live nightly</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.6999,40.4152,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>La Venencia</name>
+      <description>Echegaray 7 · Barrio Letras · unchanged since 1930s · sherry only from the barrel · no photos</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.7000,40.4164,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Los Rotos</name>
+      <description>Calle de las Huertas · Barrio Letras · alternative late bar · eclectic music</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.6978,40.4157,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>La Coquette Blues Bar</name>
+      <description>Hileras 14 · near Callao · legendary blues venue · live music nightly</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.7077,40.4172,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>La Terraza del Urban</name>
+      <description>Hotel Urban · Carrera de San Jerónimo 34 · rooftop · open late</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.6989,40.4153,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Fat Cats Cocktail House</name>
+      <description>Infante 5 · Barrio Letras · speakeasy craft cocktails</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.6987,40.4148,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Recoletos Jazz Madrid</name>
+      <description>Paseo de Recoletos 18 · elegant jazz club · live acts weekends</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.6900,40.4218,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>El Willy HIFI Bar</name>
+      <description>Centro · HiFi bar · vinyl DJ sets · oysters &amp; cocktails</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.7050,40.4180,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Alchemist 1967</name>
+      <description>C. de las Veneras 1 · Centro · craft cocktails · near Callao</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.7052,40.4179,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Cafe de Ratas</name>
+      <description>Salitre 44 · Lavapiés · cult dive bar · cheap drinks · counter-culture crowd</description>
+      <styleUrl>#fri</styleUrl>
+      <Point><coordinates>-3.6993,40.4099,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+
+  <!-- ── SATURDAY Jul 18 ── -->
+  <Folder>
+    <name>🟢 Saturday · Jul 18</name>
+    <Placemark>
+      <name>Alma Nomad Bakery</name>
+      <description>Santa Feliciana 10 · Sat 9:30am breakfast</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.7007,40.4342,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>El Retiro Park</name>
+      <description>Sat 11am · peacock garden → Parterre → rowboats → Crystal Palace · allow 2hrs</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.6835,40.4153,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>LART</name>
+      <description>Lope de Rueda 51 · Retiro · €1 beers · neighbourhood bar east of the park</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.6745,40.4175,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Bodegas Casas</name>
+      <description>Av. Ciudad de Barcelona 23 · 100-year-old bodega · vermut on tap · south edge of Retiro</description>
+      <styleUrl>#bodega</styleUrl>
+      <Point><coordinates>-3.6823,40.4052,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Juana la Loca ⭐</name>
+      <description>Recoletos 10 · Salamanca · Sat 1:15pm lunch · life-changing tortilla de patatas</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.6903,40.4217,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Casa Dani</name>
+      <description>Mercado de la Paz · Ayala 28 · viral tortilla stall · queue at the counter</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.6804,40.4258,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Sabatini Gardens</name>
+      <description>Sat 4pm · formal gardens behind Royal Palace · very photogenic</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.7140,40.4203,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Palacio Real</name>
+      <description>Calle de Bailén · largest royal palace in western Europe · book timed entry €14</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.7142,40.4198,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Catedral de la Almudena</name>
+      <description>Calle de Bailén 10 · free entry · bright Neo-Gothic interior</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.7144,40.4150,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Campo del Moro</name>
+      <description>Hidden royal gardens · swans · very quiet locals' secret</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.7173,40.4183,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Templo de Debod</name>
+      <description>Parque del Oeste · 2,200-year-old Egyptian temple · one of Madrid's best sunset spots</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.7176,40.4240,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>La Bola ⭐</name>
+      <description>Calle de la Bola 5 · since 1870 · cocido madrileño in clay pots over wood fire · book ahead</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.7099,40.4202,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Casa Ciriaco</name>
+      <description>Calle Mayor 84 · since 1917 · pepitoria de gallina · callos a la madrileña</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.7089,40.4148,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Casa Labra</name>
+      <description>Calle de Tetuán 12 · Sol · since 1860 · free bacalao with cold draft</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.7038,40.4168,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Chocolatería San Ginés ⭐</name>
+      <description>Pasadizo de San Ginés 5 · churros con chocolate since 1894 · open 24hrs</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.7073,40.4158,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Mercado de San Miguel</name>
+      <description>Plaza de San Miguel · gourmet market · 4.4★ · oysters · jamón · pintxos · opens 10am</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.7081,40.4153,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>The Hat Rooftop ⭐</name>
+      <description>Imperial 9 · Sat 6:30pm · best-rated rooftop 4.7★ · great views · good prices</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.7010,40.4143,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Makáa Rooftop</name>
+      <description>Plaza del Carmen 1 · rooftop · DJ · city views</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.7028,40.4188,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>El Jardín de Diana</name>
+      <description>Hyatt Centric · Gran Vía 31 · rooftop pool bar · wide Gran Vía views</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.7091,40.4203,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Vincci The Mint Rooftop Bar</name>
+      <description>Gran Vía 66 · dramatic city views · opens from 6pm</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.7163,40.4207,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Dani Brasserie</name>
+      <description>Four Seasons · Calle de Sevilla 3 · rooftop · Dani García · book ahead</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.7011,40.4168,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>61.Sixtyone ✓ BOOKED</name>
+      <description>José Abascal 61 · Chamberí · Sat 9:30pm · €250 deposit ✓ · turns into club at midnight until 5:30am</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.6995,40.4383,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Casa Neutrale Wine Bar</name>
+      <description>Chamberí · intimate Mediterranean bar · DJ-led vinyl hi-fi experience Thu–Sat · 4.8★</description>
+      <styleUrl>#sat</styleUrl>
+      <Point><coordinates>-3.6998,40.4355,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+
+  <!-- ── SUNDAY Jul 19 ── -->
+  <Folder>
+    <name>🟣 Sunday · Jul 19 (World Cup Final)</name>
+    <Placemark>
+      <name>El Rastro flea market</name>
+      <description>Ribera de Curtidores · Sun only 9am–3pm · Madrid's famous flea market</description>
+      <styleUrl>#sun</styleUrl>
+      <Point><coordinates>-3.7073,40.4070,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Basílica de San Francisco el Grande</name>
+      <description>Plaza de San Francisco · open 10:00–13:30 · go inside after El Rastro</description>
+      <styleUrl>#sun</styleUrl>
+      <Point><coordinates>-3.7165,40.4097,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Palacio de Cristal / Retiro</name>
+      <description>Sun afternoon stroll</description>
+      <styleUrl>#sun</styleUrl>
+      <Point><coordinates>-3.6835,40.4153,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Palacio de Cibeles · CentroCentro</name>
+      <description>Plaza de Cibeles 1 · free galleries + Mirador rooftop ~€3 · 8th floor views</description>
+      <styleUrl>#sun</styleUrl>
+      <Point><coordinates>-3.6932,40.4193,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>⭐ Cervecería Alemana (pre-match)</name>
+      <description>Plaza de Santa Ana 6 · Sun pre-match · recommended · Hemingway's local</description>
+      <styleUrl>#sun</styleUrl>
+      <Point><coordinates>-3.6943,40.4190,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>El Anciano Rey de los Vinos</name>
+      <description>Calle Bailén 19 · pre-match option · historic wine bar</description>
+      <styleUrl>#sun</styleUrl>
+      <Point><coordinates>-3.7142,40.4198,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Taberna La Dolores</name>
+      <description>Plaza de Jesús 4 · pre-match option</description>
+      <styleUrl>#sun</styleUrl>
+      <Point><coordinates>-3.6975,40.4155,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>El Pabellón</name>
+      <description>Paseo de Recoletos 18 · pre-match option</description>
+      <styleUrl>#sun</styleUrl>
+      <Point><coordinates>-3.6923,40.4218,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>El Estudio Vegano</name>
+      <description>Calle del León 12 · Barrio Letras · fully vegan · pre-match dinner option</description>
+      <styleUrl>#sun</styleUrl>
+      <Point><coordinates>-3.6982,40.4147,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>⚽ James Joyce Irish Pub ✓ BOOKED</name>
+      <description>Sun 7:30pm · booked for 5 · World Cup Final kicks off 9pm</description>
+      <styleUrl>#sun</styleUrl>
+      <Point><coordinates>-3.6894,40.4198,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>⚽ Plaza de Cibeles (outdoor screen)</name>
+      <description>Free · giant outdoor screen · where Spain celebrated 2010 World Cup · electric atmosphere</description>
+      <styleUrl>#sun</styleUrl>
+      <Point><coordinates>-3.6934,40.4193,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Ponja Nikkei (post-match)</name>
+      <description>Santa Teresa 16 · Sun after match</description>
+      <styleUrl>#sun</styleUrl>
+      <Point><coordinates>-3.6969,40.4199,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>JazzVille (post-match)</name>
+      <description>Jesús Aprendiz 19 · Barrio Letras · live jazz from midnight</description>
+      <styleUrl>#sun</styleUrl>
+      <Point><coordinates>-3.6959,40.4140,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>LART (post-match wind-down)</name>
+      <description>Lope de Rueda 51 · Retiro · €1 beers · 10 min taxi from Cibeles</description>
+      <styleUrl>#sun</styleUrl>
+      <Point><coordinates>-3.6745,40.4175,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+
+  <!-- ── MONDAY Jul 20 ── -->
+  <Folder>
+    <name>🟡 Monday · Jul 20</name>
+    <Placemark>
+      <name>La Casa Amande</name>
+      <description>Plaza de Olavide · Mon 9am breakfast</description>
+      <styleUrl>#mon</styleUrl>
+      <Point><coordinates>-3.7007,40.4342,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Alma Nomad Bakery</name>
+      <description>Santa Feliciana 10 · Mon 10:30am</description>
+      <styleUrl>#mon</styleUrl>
+      <Point><coordinates>-3.7010,40.4340,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Casa Luna</name>
+      <description>Corredera Baja de San Pablo 4 · Mon noon · wine bar · charcuterie boards</description>
+      <styleUrl>#mon</styleUrl>
+      <Point><coordinates>-3.7045,40.4218,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Ponzano Street tapas crawl</name>
+      <description>Mon 1:30pm · Chamberí · hop across 4–5 bars · no booking needed</description>
+      <styleUrl>#mon</styleUrl>
+      <Point><coordinates>-3.7008,40.4361,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>El Doble</name>
+      <description>Ponzano 15 · since 1987 · 3.8°C draft beer · Chamberí institution</description>
+      <styleUrl>#mon</styleUrl>
+      <Point><coordinates>-3.7003,40.4368,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>El Lateral</name>
+      <description>Ponzano 12 · modern wine bar · Spanish wines by the glass</description>
+      <styleUrl>#mon</styleUrl>
+      <Point><coordinates>-3.7002,40.4366,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Tragabuches</name>
+      <description>Ponzano 6 · pintxos bar · jamón · croquetas</description>
+      <styleUrl>#mon</styleUrl>
+      <Point><coordinates>-3.7001,40.4362,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Swiss Butter</name>
+      <description>Zurbano 95 · Chamberí · viral steak in butter sauce · dinner option</description>
+      <styleUrl>#mon</styleUrl>
+      <Point><coordinates>-3.6923,40.4370,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>El Vegetariano de Hartzenbusch (vegan option)</name>
+      <description>Hartzenbusch 3 · Chamberí · one of Madrid's oldest vegetarian restaurants</description>
+      <styleUrl>#mon</styleUrl>
+      <Point><coordinates>-3.7003,40.4333,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>El Retiro — final stroll</name>
+      <description>Mon 4pm · Florida Park terrace · Palacio de Cristal · farewell walk</description>
+      <styleUrl>#mon</styleUrl>
+      <Point><coordinates>-3.6835,40.4153,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Barrio de Ibiza</name>
+      <description>East gate of Retiro · Mercado de Ibiza · neighbourhood tabernas · quiet local barrio</description>
+      <styleUrl>#mon</styleUrl>
+      <Point><coordinates>-3.6720,40.4185,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Couzapin</name>
+      <description>Barrio de Ibiza · natural wines · perfect last stop before airport</description>
+      <styleUrl>#mon</styleUrl>
+      <Point><coordinates>-3.6718,40.4186,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Lacrado Despensa</name>
+      <description>Sainz de Baranda 34 · Retiro · gourmet deli &amp; wine shop</description>
+      <styleUrl>#mon</styleUrl>
+      <Point><coordinates>-3.6718,40.4165,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Parque de las Siete Tetas (Mon sunset)</name>
+      <description>Mon sunset · Vallecas · shared taxi ~€15–18 · one of Madrid's best viewpoints</description>
+      <styleUrl>#mon</styleUrl>
+      <Point><coordinates>-3.6558,40.3985,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+
+  <!-- ── BODEGAS ── -->
+  <Folder>
+    <name>🍷 Bodegas</name>
+    <Placemark>
+      <name>Bodega de La Ardosa</name>
+      <description>Calle de Colón 13 · Malasaña · @laardosamalasana · est. 1892 · vermut on tap · legendary croquetas</description>
+      <styleUrl>#bodega</styleUrl>
+      <Point><coordinates>-3.7036,40.4234,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>El Anciano Rey de los Vinos</name>
+      <description>Calle Bailén 19 · historic wine-focused bar near the Palace</description>
+      <styleUrl>#bodega</styleUrl>
+      <Point><coordinates>-3.7142,40.4198,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Bodegas Alfaro</name>
+      <description>Ponzano 10 · old-school bodega · house wine &amp; pintxos at the bar</description>
+      <styleUrl>#bodega</styleUrl>
+      <Point><coordinates>-3.7002,40.4365,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Bodegas Casas</name>
+      <description>Av. Ciudad de Barcelona 23 · Pacífico · 100-year-old bodega · vermut on tap · south edge of Retiro</description>
+      <styleUrl>#bodega</styleUrl>
+      <Point><coordinates>-3.6823,40.4052,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+
+  <!-- ── LANDMARKS ── -->
+  <Folder>
+    <name>📍 Landmarks</name>
+    <Placemark>
+      <name>Plaza Mayor</name>
+      <description>Madrid's grand central square · evening stroll</description>
+      <styleUrl>#landmark</styleUrl>
+      <Point><coordinates>-3.7074,40.4155,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Puerta del Sol</name>
+      <description>Madrid's km 0 · Bear &amp; Madroño statue · always buzzing</description>
+      <styleUrl>#landmark</styleUrl>
+      <Point><coordinates>-3.7038,40.4168,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>De Princesa</name>
+      <description>Calle de la Princesa 51 · Argüelles · tapas spot near Templo de Debod</description>
+      <styleUrl>#landmark</styleUrl>
+      <Point><coordinates>-3.7170,40.4322,0</coordinates></Point>
+    </Placemark>
+  </Folder>
+
+</Document>
+</kml>
