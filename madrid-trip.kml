@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Madrid Trip July 2026</name>
+    <description>Itinerary map · mediasteve-collab.github.io/trip/</description>
+
+    <!-- ── Styles ── -->
+    <Style id="s-green">
+      <IconStyle>
+        <color>ff7aaf1b</color>
+        <scale>1.1</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="s-blue">
+      <IconStyle>
+        <color>ffF6823B</color>
+        <scale>1.1</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="s-purple">
+      <IconStyle>
+        <color>ffA73A4A</color>
+        <scale>1.1</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/pushpin/purple-pushpin.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="s-winepurple">
+      <IconStyle>
+        <color>ff8B2D7B</color>
+        <scale>1.1</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/pushpin/pink-pushpin.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="s-red">
+      <IconStyle>
+        <color>ff1E0BC6</color>
+        <scale>1.1</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="s-darkgreen">
+      <IconStyle>
+        <color>ff3A6B1B</color>
+        <scale>1.2</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="s-hotel-blue">
+      <IconStyle>
+        <color>ffD6782A</color>
+        <scale>1.3</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/paddle/S.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="s-hotel-orange">
+      <IconStyle>
+        <color>ff305AD8</color>
+        <scale>1.3</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/paddle/S.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="s-indigo">
+      <IconStyle>
+        <color>ffB74A53</color>
+        <scale>1.1</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/pushpin/purple-pushpin.png</href></Icon>
+      </IconStyle>
+    </Style>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- HOTELS                                   -->
+    <!-- ════════════════════════════════════════ -->
+    <Folder>
+      <name>Hotels</name>
+      <Placemark>
+        <name>Catalonia Plaza España</name>
+        <description>Stuart &amp; Josianne · Gran Vía 70</description>
+        <styleUrl>#s-hotel-blue</styleUrl>
+        <Point><coordinates>-3.7115,40.4203,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>JW Marriott</name>
+        <description>Steve &amp; Parin · Calle Sevilla 2</description>
+        <styleUrl>#s-hotel-orange</styleUrl>
+        <Point><coordinates>-3.7001,40.4168,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- THURSDAY · Jul 3                         -->
+    <!-- ════════════════════════════════════════ -->
+    <Folder>
+      <name>Thursday · Jul 3</name>
+      <Placemark>
+        <name>Toma Café</name>
+        <description>Thu 9am · C. de la Palma 18 · Malasaña specialty coffee</description>
+        <styleUrl>#s-green</styleUrl>
+        <Point><coordinates>-3.7033,40.4213,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Malasaña &amp; Chueca wander</name>
+        <description>Thu 10:30am · Carapazona + In-Verso Libros · bookshops and neighbourhood streets</description>
+        <styleUrl>#s-green</styleUrl>
+        <Point><coordinates>-3.6960,40.4248,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Bocado</name>
+        <description>Thu lunch · Santa Teresa 1 · all-day brunch spot</description>
+        <styleUrl>#s-blue</styleUrl>
+        <Point><coordinates>-3.6969,40.4199,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Calle de las Huertas</name>
+        <description>Thu 3pm · literary stroll through Barrio Letras</description>
+        <styleUrl>#s-green</styleUrl>
+        <Point><coordinates>-3.6975,40.4155,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Museo Reina Sofía</name>
+        <description>Thu 6:30pm · Guernica + Dalí · free 7–9pm · closed Tue · Ronda de Atocha 2</description>
+        <styleUrl>#s-purple</styleUrl>
+        <Point><coordinates>-3.6946,40.4079,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Le Tavernier</name>
+        <description>Thu 7pm · walk-in only · Floor 8 · rooftop terrace · Gran Vía area</description>
+        <styleUrl>#s-blue</styleUrl>
+        <Point><coordinates>-3.7022,40.4196,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Quispe Madrid</name>
+        <description>Thu 8:30pm · booked · Salón de fondo · Peruvian fine dining · Jorge Juan 33</description>
+        <styleUrl>#s-blue</styleUrl>
+        <Point><coordinates>-3.6880,40.4215,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Ficus Bar (nightcap)</name>
+        <description>Thu nightcap · Santo Tomé 8, Chueca · African-botanical cocktails · tropical jungle interior · until 2am Thu</description>
+        <styleUrl>#s-purple</styleUrl>
+        <Point><coordinates>-3.6950,40.4237,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- FRIDAY · Jul 4                           -->
+    <!-- ════════════════════════════════════════ -->
+    <Folder>
+      <name>Friday · Jul 4</name>
+      <Placemark>
+        <name>Bucólico Café</name>
+        <description>Fri 9am · Barbieri 4, Chueca · specialty coffee</description>
+        <styleUrl>#s-green</styleUrl>
+        <Point><coordinates>-3.6982,40.4207,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Museo del Prado</name>
+        <description>Fri 11am · booked · 5 tickets · Paseo del Prado s/n · Velázquez, Goya, El Greco</description>
+        <styleUrl>#s-purple</styleUrl>
+        <Point><coordinates>-3.6921,40.4138,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>La Falda</name>
+        <description>Fri lunch · Miguel Servet 4, Lavapiés · kitchen closes 3:45pm</description>
+        <styleUrl>#s-blue</styleUrl>
+        <Point><coordinates>-3.7008,40.4074,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Chimpancé Mural (Okuda + Bordalo II)</name>
+        <description>Fri · street art · Embajadores 33, Lavapiés</description>
+        <styleUrl>#s-indigo</styleUrl>
+        <Point><coordinates>-3.7046,40.4084,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Esta es una Plaza</name>
+        <description>Fri · community garden / guerrilla park · Dr. Fourquet 24, Lavapiés</description>
+        <styleUrl>#s-indigo</styleUrl>
+        <Point><coordinates>-3.6985,40.4073,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>La Casa Encendida</name>
+        <description>Fri · free contemporary art + cinema · Ronda de Valencia 2, Lavapiés</description>
+        <styleUrl>#s-purple</styleUrl>
+        <Point><coordinates>-3.6999,40.4060,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Cervecería La Paloma 85</name>
+        <description>Fri &amp; Sun aperitivo · Calle Toledo 85, La Latina · neighbourhood bar</description>
+        <styleUrl>#s-blue</styleUrl>
+        <Point><coordinates>-3.7080,40.4141,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Cava Baja tapas crawl</name>
+        <description>Fri 9:30pm · La Latina · Casa Revuelta · Casa Lucas · Taberna Tempranillo · La Txakolina · Lamiak · Almendro 13 · Txirimiri</description>
+        <styleUrl>#s-blue</styleUrl>
+        <Point><coordinates>-3.7095,40.4136,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>TRAMO (dinner alternative)</name>
+        <description>Fri dinner alt · C. de Eugenio Salazar 56, Chamartín · modern Spanish tasting menu</description>
+        <styleUrl>#s-blue</styleUrl>
+        <Point><coordinates>-3.6821,40.4583,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Harrison 1933</name>
+        <description>Fri 1am · Recoletos 16 · late-night jazz bar · ⭐ recommended · until 5:30am</description>
+        <styleUrl>#s-purple</styleUrl>
+        <Point><coordinates>-3.6898,40.4216,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- SATURDAY · Jul 5                         -->
+    <!-- ════════════════════════════════════════ -->
+    <Folder>
+      <name>Saturday · Jul 5</name>
+      <Placemark>
+        <name>Alma Nomad Bakery</name>
+        <description>Sat 9:30am · Santa Feliciana 10, Chamberí · sourdough and specialty coffee</description>
+        <styleUrl>#s-green</styleUrl>
+        <Point><coordinates>-3.7007,40.4342,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>El Retiro Park</name>
+        <description>Sat 11am · Parque del Buen Retiro · peacock garden · rowboats · Crystal Palace (free)</description>
+        <styleUrl>#s-green</styleUrl>
+        <Point><coordinates>-3.6835,40.4153,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Juana la Loca</name>
+        <description>Sat 1:15pm · booked for 4 · €80 deposit · Puerta de Moros 4, La Latina · creative tortillas</description>
+        <styleUrl>#s-blue</styleUrl>
+        <Point><coordinates>-3.6903,40.4217,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Sabatini Gardens</name>
+        <description>Sat 4pm · Jardines de Sabatini · behind Royal Palace · free · peacocks and fountains</description>
+        <styleUrl>#s-green</styleUrl>
+        <Point><coordinates>-3.7140,40.4203,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Campo del Moro</name>
+        <description>Sat · hidden royal gardens · swans · views of Palacio Real · free</description>
+        <styleUrl>#s-green</styleUrl>
+        <Point><coordinates>-3.7173,40.4183,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>The Hat Rooftop</name>
+        <description>Sat 6pm · Imperial 9 · rooftop bar with Palacio Real views · pre-dinner drinks pick one</description>
+        <styleUrl>#s-blue</styleUrl>
+        <Point><coordinates>-3.7010,40.4143,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Makáa Rooftop</name>
+        <description>Sat 8pm · Plaza del Carmen · pre-dinner cocktails · Gran Vía rooftop · pick one</description>
+        <styleUrl>#s-blue</styleUrl>
+        <Point><coordinates>-3.7028,40.4188,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>61.Sixtyone</name>
+        <description>Sat 9:30pm · booked · José Abascal 61, Almagro · tasting menu restaurant</description>
+        <styleUrl>#s-purple</styleUrl>
+        <Point><coordinates>-3.6995,40.4383,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- SUNDAY · Jul 6                           -->
+    <!-- ════════════════════════════════════════ -->
+    <Folder>
+      <name>Sunday · Jul 6</name>
+      <Placemark>
+        <name>El Rastro</name>
+        <description>Sun 9am–3pm · Ribera de Curtidores · Madrid's iconic flea market · Sun only</description>
+        <styleUrl>#s-red</styleUrl>
+        <Point><coordinates>-3.7073,40.4070,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Plaza de los Pintores</name>
+        <description>Sun 10am–3pm · Plaza Conde de Barajas · "El Montmartre de Madrid" · 38 artists · open-air art market</description>
+        <styleUrl>#s-green</styleUrl>
+        <Point><coordinates>-3.7076,40.4151,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Palacio de Cristal / Retiro (Sunday)</name>
+        <description>Sun afternoon stroll · Crystal Palace · boating lake · Retiro park</description>
+        <styleUrl>#s-green</styleUrl>
+        <Point><coordinates>-3.6835,40.4153,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>El Pabellón (pre-match)</name>
+        <description>Sun pre-match drinks · Paseo de Recoletos 18 · grand terrace bar</description>
+        <styleUrl>#s-blue</styleUrl>
+        <Point><coordinates>-3.6923,40.4218,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>⭐ Cervecería Alemana (pre-match)</name>
+        <description>Sun pre-match · Plaza de Santa Ana 6 · ⭐ recommended · Hemingway's bar since 1904</description>
+        <styleUrl>#s-blue</styleUrl>
+        <Point><coordinates>-3.6943,40.4190,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>El Anciano Rey de los Vinos (pre-match)</name>
+        <description>Sun pre-match option · Calle Bailén 19 · old-school Madrid bodega · views to Almudena</description>
+        <styleUrl>#s-winepurple</styleUrl>
+        <Point><coordinates>-3.7142,40.4198,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Taberna La Dolores (pre-match)</name>
+        <description>Sun pre-match option · Plaza de Jesús 4 · tiled 1908 bodega · ice-cold draft beer</description>
+        <styleUrl>#s-blue</styleUrl>
+        <Point><coordinates>-3.6975,40.4155,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>⚽ James Joyce Irish Pub — World Cup Final</name>
+        <description>Sun 7:30pm · booked for 5 · World Cup Final kicks off 9pm · C. de Alcalá / Plaza de Cibeles area</description>
+        <styleUrl>#s-darkgreen</styleUrl>
+        <Point><coordinates>-3.6894,40.4198,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>⚽ Plaza de Cibeles — World Cup Final outdoor screen</name>
+        <description>World Cup Final outdoor screen · free · fan zone · Plaza de Cibeles</description>
+        <styleUrl>#s-darkgreen</styleUrl>
+        <Point><coordinates>-3.6892,40.4197,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Ponja Nikkei (after match)</name>
+        <description>Sun after match · Santa Teresa 16 · Nikkei (Japanese-Peruvian) · Chueca</description>
+        <styleUrl>#s-purple</styleUrl>
+        <Point><coordinates>-3.6969,40.4199,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- MONDAY · Jul 7                           -->
+    <!-- ════════════════════════════════════════ -->
+    <Folder>
+      <name>Monday · Jul 7</name>
+      <Placemark>
+        <name>La Casa Amande</name>
+        <description>Mon 9am · Plaza de Olavide, Chamberí · neighbourhood café · croissants + specialty coffee</description>
+        <styleUrl>#s-green</styleUrl>
+        <Point><coordinates>-3.7007,40.4342,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Alma Nomad Bakery (Monday)</name>
+        <description>Mon 10:30am · Santa Feliciana 10, Chamberí · sourdough and specialty coffee</description>
+        <styleUrl>#s-green</styleUrl>
+        <Point><coordinates>-3.7009,40.4340,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Bodega de La Ardosa</name>
+        <description>Mon option · est. 1892 · Calle de Colón 13, Malasaña (@laardosamalasana) · vermut on tap from the barrel · legendary croquetas and tortilla · pure old Madrid</description>
+        <styleUrl>#s-winepurple</styleUrl>
+        <Point><coordinates>-3.7036,40.4234,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Casa Luna</name>
+        <description>Mon noon · Corredera Baja de San Pablo 4, Malasaña · brunch · natural light</description>
+        <styleUrl>#s-blue</styleUrl>
+        <Point><coordinates>-3.7045,40.4218,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Ponzano Street crawl</name>
+        <description>Mon 1:30pm · Calle de Ponzano, Chamberí · Bodegas Alfaro · El Lateral · Tragabuches · La Taberna de Ponzano · El Doble · very local, zero tourists</description>
+        <styleUrl>#s-blue</styleUrl>
+        <Point><coordinates>-3.7008,40.4361,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>El Retiro — final stroll</name>
+        <description>Mon 4pm · Florida Park terrace · Crystal Palace · last walk through the park before airport</description>
+        <styleUrl>#s-green</styleUrl>
+        <Point><coordinates>-3.6835,40.4153,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Parque de las Siete Tetas</name>
+        <description>Mon sunset · Vallecas · shared taxi ~€15–18 · panoramic views over Madrid · local secret</description>
+        <styleUrl>#s-green</styleUrl>
+        <Point><coordinates>-3.6558,40.3985,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- GENERAL / LANDMARKS                      -->
+    <!-- ════════════════════════════════════════ -->
+    <Folder>
+      <name>General / Landmarks</name>
+      <Placemark>
+        <name>Plaza Mayor</name>
+        <description>Evening stroll · San Miguel market · Habsburg Madrid · arcaded square</description>
+        <styleUrl>#s-green</styleUrl>
+        <Point><coordinates>-3.7074,40.4155,0</coordinates></Point>
+      </Placemark>
+      <Placemark>
+        <name>Palacio Real</name>
+        <description>Royal Palace · free on Mon/Wed/Thu evenings · largest royal palace in Western Europe</description>
+        <styleUrl>#s-green</styleUrl>
+        <Point><coordinates>-3.7142,40.4198,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+
+  </Document>
+</kml>
